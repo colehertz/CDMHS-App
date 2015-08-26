@@ -14,6 +14,10 @@
 		EDA362351B8BAB2500DA66AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA362341B8BAB2500DA66AA /* Images.xcassets */; };
 		EDA362381B8BAB2500DA66AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA362361B8BAB2500DA66AA /* LaunchScreen.xib */; };
 		EDA362441B8BAB2500DA66AA /* CDMHS_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA362431B8BAB2500DA66AA /* CDMHS_AppTests.swift */; };
+		EDA3624E1B8BAD3000DA66AA /* welcomeBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDA3624D1B8BAD3000DA66AA /* welcomeBackground.jpg */; };
+		EDA362521B8BADC800DA66AA /* cdmLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDA362511B8BADC800DA66AA /* cdmLogo.png */; };
+		EDA362541B8BAE3100DA66AA /* welcomeBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDA362531B8BAE3100DA66AA /* welcomeBack.jpg */; };
+		EDA362561B8BAFD100DA66AA /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA362551B8BAFD100DA66AA /* WelcomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		EDA3623D1B8BAB2500DA66AA /* CDMHS-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CDMHS-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA362421B8BAB2500DA66AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA362431B8BAB2500DA66AA /* CDMHS_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDMHS_AppTests.swift; sourceTree = "<group>"; };
+		EDA3624D1B8BAD3000DA66AA /* welcomeBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcomeBackground.jpg; sourceTree = "<group>"; };
+		EDA362511B8BADC800DA66AA /* cdmLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cdmLogo.png; sourceTree = "<group>"; };
+		EDA362531B8BAE3100DA66AA /* welcomeBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcomeBack.jpg; sourceTree = "<group>"; };
+		EDA362551B8BAFD100DA66AA /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +90,7 @@
 				EDA3622B1B8BAB2500DA66AA /* AppDelegate.swift */,
 				EDA3622D1B8BAB2500DA66AA /* FirstViewController.swift */,
 				EDA3622F1B8BAB2500DA66AA /* SecondViewController.swift */,
+				EDA362551B8BAFD100DA66AA /* WelcomeVC.swift */,
 				EDA362311B8BAB2500DA66AA /* Main.storyboard */,
 				EDA362341B8BAB2500DA66AA /* Images.xcassets */,
 				EDA362361B8BAB2500DA66AA /* LaunchScreen.xib */,
@@ -93,6 +102,9 @@
 		EDA362291B8BAB2500DA66AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EDA3624D1B8BAD3000DA66AA /* welcomeBackground.jpg */,
+				EDA362531B8BAE3100DA66AA /* welcomeBack.jpg */,
+				EDA362511B8BADC800DA66AA /* cdmLogo.png */,
 				EDA3622A1B8BAB2500DA66AA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,9 +207,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDA3624E1B8BAD3000DA66AA /* welcomeBackground.jpg in Resources */,
 				EDA362331B8BAB2500DA66AA /* Main.storyboard in Resources */,
+				EDA362521B8BADC800DA66AA /* cdmLogo.png in Resources */,
 				EDA362381B8BAB2500DA66AA /* LaunchScreen.xib in Resources */,
 				EDA362351B8BAB2500DA66AA /* Images.xcassets in Resources */,
+				EDA362541B8BAE3100DA66AA /* welcomeBack.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +233,7 @@
 				EDA362301B8BAB2500DA66AA /* SecondViewController.swift in Sources */,
 				EDA3622C1B8BAB2500DA66AA /* AppDelegate.swift in Sources */,
 				EDA3622E1B8BAB2500DA66AA /* FirstViewController.swift in Sources */,
+				EDA362561B8BAFD100DA66AA /* WelcomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +429,7 @@
 				EDA362491B8BAB2500DA66AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDA3624A1B8BAB2500DA66AA /* Build configuration list for PBXNativeTarget "CDMHS-AppTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +438,7 @@
 				EDA3624C1B8BAB2500DA66AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

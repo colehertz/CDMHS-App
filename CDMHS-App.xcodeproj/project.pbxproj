@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED2850441B8E2308005C748A /* ResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2850431B8E2307005C748A /* ResourceCell.swift */; };
+		ED2850461B8E23F2005C748A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2850451B8E23F2005C748A /* Resource.swift */; };
+		ED2850481B8E2848005C748A /* trident.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2850471B8E2848005C748A /* trident.png */; };
+		ED465D721B8E329B005F4993 /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED465D711B8E329B005F4993 /* Styler.swift */; };
 		EDA3622C1B8BAB2500DA66AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3622B1B8BAB2500DA66AA /* AppDelegate.swift */; };
-		EDA3622E1B8BAB2500DA66AA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3622D1B8BAB2500DA66AA /* FirstViewController.swift */; };
-		EDA362301B8BAB2500DA66AA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3622F1B8BAB2500DA66AA /* SecondViewController.swift */; };
+		EDA3622E1B8BAB2500DA66AA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3622D1B8BAB2500DA66AA /* HomeVC.swift */; };
+		EDA362301B8BAB2500DA66AA /* GradesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3622F1B8BAB2500DA66AA /* GradesVC.swift */; };
 		EDA362331B8BAB2500DA66AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDA362311B8BAB2500DA66AA /* Main.storyboard */; };
 		EDA362351B8BAB2500DA66AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDA362341B8BAB2500DA66AA /* Images.xcassets */; };
 		EDA362381B8BAB2500DA66AA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EDA362361B8BAB2500DA66AA /* LaunchScreen.xib */; };
@@ -31,11 +35,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED2850431B8E2307005C748A /* ResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceCell.swift; sourceTree = "<group>"; };
+		ED2850451B8E23F2005C748A /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		ED2850471B8E2848005C748A /* trident.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trident.png; sourceTree = "<group>"; };
+		ED465D711B8E329B005F4993 /* Styler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styler.swift; sourceTree = "<group>"; };
 		EDA362261B8BAB2500DA66AA /* CDMHS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDMHS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA3622A1B8BAB2500DA66AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA3622B1B8BAB2500DA66AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EDA3622D1B8BAB2500DA66AA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		EDA3622F1B8BAB2500DA66AA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EDA3622D1B8BAB2500DA66AA /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		EDA3622F1B8BAB2500DA66AA /* GradesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesVC.swift; sourceTree = "<group>"; };
 		EDA362321B8BAB2500DA66AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EDA362341B8BAB2500DA66AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EDA362371B8BAB2500DA66AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -88,8 +96,11 @@
 			isa = PBXGroup;
 			children = (
 				EDA3622B1B8BAB2500DA66AA /* AppDelegate.swift */,
-				EDA3622D1B8BAB2500DA66AA /* FirstViewController.swift */,
-				EDA3622F1B8BAB2500DA66AA /* SecondViewController.swift */,
+				EDA3622D1B8BAB2500DA66AA /* HomeVC.swift */,
+				ED465D711B8E329B005F4993 /* Styler.swift */,
+				ED2850431B8E2307005C748A /* ResourceCell.swift */,
+				ED2850451B8E23F2005C748A /* Resource.swift */,
+				EDA3622F1B8BAB2500DA66AA /* GradesVC.swift */,
 				EDA362551B8BAFD100DA66AA /* WelcomeVC.swift */,
 				EDA362311B8BAB2500DA66AA /* Main.storyboard */,
 				EDA362341B8BAB2500DA66AA /* Images.xcassets */,
@@ -105,6 +116,7 @@
 				EDA3624D1B8BAD3000DA66AA /* welcomeBackground.jpg */,
 				EDA362531B8BAE3100DA66AA /* welcomeBack.jpg */,
 				EDA362511B8BADC800DA66AA /* cdmLogo.png */,
+				ED2850471B8E2848005C748A /* trident.png */,
 				EDA3622A1B8BAB2500DA66AA /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -207,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED2850481B8E2848005C748A /* trident.png in Resources */,
 				EDA3624E1B8BAD3000DA66AA /* welcomeBackground.jpg in Resources */,
 				EDA362331B8BAB2500DA66AA /* Main.storyboard in Resources */,
 				EDA362521B8BADC800DA66AA /* cdmLogo.png in Resources */,
@@ -230,9 +243,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDA362301B8BAB2500DA66AA /* SecondViewController.swift in Sources */,
+				ED2850441B8E2308005C748A /* ResourceCell.swift in Sources */,
+				EDA362301B8BAB2500DA66AA /* GradesVC.swift in Sources */,
 				EDA3622C1B8BAB2500DA66AA /* AppDelegate.swift in Sources */,
-				EDA3622E1B8BAB2500DA66AA /* FirstViewController.swift in Sources */,
+				ED465D721B8E329B005F4993 /* Styler.swift in Sources */,
+				ED2850461B8E23F2005C748A /* Resource.swift in Sources */,
+				EDA3622E1B8BAB2500DA66AA /* HomeVC.swift in Sources */,
 				EDA362561B8BAFD100DA66AA /* WelcomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

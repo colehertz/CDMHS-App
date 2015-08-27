@@ -126,9 +126,18 @@
                     <view key="view" contentMode="scaleToFill" id="u4y-Mo-PnP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Dgv-u5-bS4">
+                                <rect key="frame" x="0.0" y="-33" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="news.png" id="1gU-5y-bQb"/>
+                    <connections>
+                        <outlet property="newsTable" destination="Dgv-u5-bS4" id="lK3-ui-pM8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rY-OB-cQG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

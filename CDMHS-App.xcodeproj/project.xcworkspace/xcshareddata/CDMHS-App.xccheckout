@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>6E73504E-8864-4EE0-B062-20214BBCC99D</string>
 	<key>IDESourceControlProjectName</key>
-	<string>CDMHS-App</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>D6471AFDB429E060FF116D871CC9D90A36B4E345</key>
 		<string>https://github.com/colehertz/CDMHS-App.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CDMHS-App.xcodeproj</string>
+	<string>CDMHS-App.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>D6471AFDB429E060FF116D871CC9D90A36B4E345</key>

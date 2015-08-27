@@ -11,6 +11,9 @@ import UIKit
 
 class Styler {
     
+    //#49b8f8
+    static var mainColor = UIColor(red: (73/255), green: (184/255), blue: (248/255), alpha: 1)
+    
     static var fontName = "Avenir Next"
     
     /// font used for top titles

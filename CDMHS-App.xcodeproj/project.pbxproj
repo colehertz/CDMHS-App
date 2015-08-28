@@ -21,6 +21,11 @@
 		ED12C4B91B8FC60E000A1452 /* socialMedia@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED12C4AD1B8FC60E000A1452 /* socialMedia@3x.png */; };
 		ED12C4BB1B8FC82D000A1452 /* Announcement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12C4BA1B8FC82D000A1452 /* Announcement.swift */; };
 		ED12C4BD1B8FC9B9000A1452 /* AnnouncementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12C4BC1B8FC9B9000A1452 /* AnnouncementCell.swift */; };
+		ED12C4C21B8FCE3C000A1452 /* instagramIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED12C4C01B8FCE3C000A1452 /* instagramIcon.png */; };
+		ED12C4C31B8FCE3C000A1452 /* twitterIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = ED12C4C11B8FCE3C000A1452 /* twitterIcon.png */; };
+		ED12C4C51B8FD00A000A1452 /* SocialMediaOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12C4C41B8FD00A000A1452 /* SocialMediaOptionCell.swift */; };
+		ED12C4C71B8FD05F000A1452 /* SocialMediaOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12C4C61B8FD05F000A1452 /* SocialMediaOption.swift */; };
+		ED12C4C91B8FDC04000A1452 /* SocialMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12C4C81B8FDC04000A1452 /* SocialMediaView.swift */; };
 		ED2850441B8E2308005C748A /* ResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2850431B8E2307005C748A /* ResourceCell.swift */; };
 		ED2850461B8E23F2005C748A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2850451B8E23F2005C748A /* Resource.swift */; };
 		ED2850481B8E2848005C748A /* trident.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2850471B8E2848005C748A /* trident.png */; };
@@ -65,6 +70,11 @@
 		ED12C4AD1B8FC60E000A1452 /* socialMedia@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "socialMedia@3x.png"; sourceTree = "<group>"; };
 		ED12C4BA1B8FC82D000A1452 /* Announcement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Announcement.swift; sourceTree = "<group>"; };
 		ED12C4BC1B8FC9B9000A1452 /* AnnouncementCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementCell.swift; sourceTree = "<group>"; };
+		ED12C4C01B8FCE3C000A1452 /* instagramIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagramIcon.png; sourceTree = "<group>"; };
+		ED12C4C11B8FCE3C000A1452 /* twitterIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitterIcon.png; sourceTree = "<group>"; };
+		ED12C4C41B8FD00A000A1452 /* SocialMediaOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaOptionCell.swift; sourceTree = "<group>"; };
+		ED12C4C61B8FD05F000A1452 /* SocialMediaOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaOption.swift; sourceTree = "<group>"; };
+		ED12C4C81B8FDC04000A1452 /* SocialMediaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaView.swift; sourceTree = "<group>"; };
 		ED2850431B8E2307005C748A /* ResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceCell.swift; sourceTree = "<group>"; };
 		ED2850451B8E23F2005C748A /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		ED2850471B8E2848005C748A /* trident.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trident.png; sourceTree = "<group>"; };
@@ -109,6 +119,8 @@
 		ED12C4A11B8FC5F0000A1452 /* Tab Bar Icons */ = {
 			isa = PBXGroup;
 			children = (
+				ED12C4C01B8FCE3C000A1452 /* instagramIcon.png */,
+				ED12C4C11B8FCE3C000A1452 /* twitterIcon.png */,
 				ED12C4A21B8FC60E000A1452 /* grades.png */,
 				ED12C4A31B8FC60E000A1452 /* grades@2x.png */,
 				ED12C4A41B8FC60E000A1452 /* grades@3x.png */,
@@ -158,6 +170,9 @@
 				ED12C4BC1B8FC9B9000A1452 /* AnnouncementCell.swift */,
 				EDA362551B8BAFD100DA66AA /* WelcomeVC.swift */,
 				EDA362311B8BAB2500DA66AA /* Main.storyboard */,
+				ED12C4C41B8FD00A000A1452 /* SocialMediaOptionCell.swift */,
+				ED12C4C61B8FD05F000A1452 /* SocialMediaOption.swift */,
+				ED12C4C81B8FDC04000A1452 /* SocialMediaView.swift */,
 				EDA362341B8BAB2500DA66AA /* Images.xcassets */,
 				EDA362361B8BAB2500DA66AA /* LaunchScreen.xib */,
 				EDA362291B8BAB2500DA66AA /* Supporting Files */,
@@ -277,6 +292,7 @@
 			files = (
 				ED2850481B8E2848005C748A /* trident.png in Resources */,
 				EDA3624E1B8BAD3000DA66AA /* welcomeBackground.jpg in Resources */,
+				ED12C4C21B8FCE3C000A1452 /* instagramIcon.png in Resources */,
 				ED12C4B11B8FC60E000A1452 /* home.png in Resources */,
 				EDA362331B8BAB2500DA66AA /* Main.storyboard in Resources */,
 				ED12C4B41B8FC60E000A1452 /* news.png in Resources */,
@@ -293,6 +309,7 @@
 				ED12C4B51B8FC60E000A1452 /* news@2x.png in Resources */,
 				ED12C4B31B8FC60E000A1452 /* home@3x.png in Resources */,
 				EDA362541B8BAE3100DA66AA /* welcomeBack.jpg in Resources */,
+				ED12C4C31B8FCE3C000A1452 /* twitterIcon.png in Resources */,
 				ED12C4B01B8FC60E000A1452 /* grades@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED12C4C91B8FDC04000A1452 /* SocialMediaView.swift in Sources */,
 				ED12C4BD1B8FC9B9000A1452 /* AnnouncementCell.swift in Sources */,
 				ED2850441B8E2308005C748A /* ResourceCell.swift in Sources */,
 				EDA362301B8BAB2500DA66AA /* GradesVC.swift in Sources */,
@@ -320,7 +338,9 @@
 				ED465D741B8E36BD005F4993 /* SocialVC.swift in Sources */,
 				EDA3622E1B8BAB2500DA66AA /* HomeVC.swift in Sources */,
 				EDA362561B8BAFD100DA66AA /* WelcomeVC.swift in Sources */,
+				ED12C4C51B8FD00A000A1452 /* SocialMediaOptionCell.swift in Sources */,
 				ED12C4BB1B8FC82D000A1452 /* Announcement.swift in Sources */,
+				ED12C4C71B8FD05F000A1452 /* SocialMediaOption.swift in Sources */,
 				ED465D761B8E3726005F4993 /* NewsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

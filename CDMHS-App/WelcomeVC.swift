@@ -16,11 +16,15 @@ class WelcomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    
     }
     
     override func viewWillAppear(animated: Bool) {
         
         // hide the nav bar
+        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        self.navigationController?.navigationBar.barTintColor = Styler.mainColor
         self.navigationController?.topViewController.navigationController?.navigationBarHidden = true
     }
     

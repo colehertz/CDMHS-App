@@ -12,6 +12,7 @@ import UIKit
 class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     // array of all announcements to display
     var announcements = [Announcement]()
+    var noneLabel = UILabel()
     
     // tableview to display news
     @IBOutlet var newsTable:UITableView!
@@ -22,6 +23,24 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         // set tableview datasource and delegate
         newsTable.dataSource = self
         newsTable.delegate = self
+        
+        noneLabel.frame = CGRectMake(self.view.frame.width/2 - 100, self.view.frame.height/2 - 10, 200, 20)
+        noneLabel.textAlignment = .Center
+        noneLabel.font = UIFont(name:Styler.fontName, size:22)
+        noneLabel.text = "No News"
+        self.view.addSubview(noneLabel)
+        noneLabel.hidden = true
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if announcements.count < 1 {
+            newsTable.hidden = true
+            noneLabel.hidden = false
+        } else {
+            newsTable.hidden = false
+            noneLabel.hidden = true
+        }
     }
     
     override func viewWillAppear(animated: Bool) {

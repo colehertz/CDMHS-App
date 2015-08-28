@@ -22,7 +22,7 @@ class Styler {
     static func styleTopBar(vc:UIViewController, title:String, backHidden:Bool) {
        vc.navigationController?.topViewController.navigationController?.navigationBarHidden = false
        vc.navigationController?.topViewController.title = title
-       vc.navigationController?.topViewController.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: Styler.mainFont!]
+       vc.navigationController?.topViewController.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: Styler.mainFont!, NSForegroundColorAttributeName : UIColor.whiteColor()]
        
         if (backHidden == true) {
             vc.navigationController?.topViewController.navigationController?.navigationItem.setHidesBackButton(true, animated: false)

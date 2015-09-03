@@ -25,9 +25,9 @@ class Styler {
        vc.navigationController?.topViewController.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: Styler.mainFont!, NSForegroundColorAttributeName : UIColor.whiteColor()]
        
         if (backHidden == true) {
-            vc.navigationController?.topViewController.navigationController?.navigationItem.setHidesBackButton(true, animated: false)
+            vc.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
         } else {
-            vc.navigationController?.topViewController.navigationController?.navigationItem.setHidesBackButton(false, animated: false)
+            vc.tabBarController?.navigationItem.setHidesBackButton(false, animated: true)
         }
         
     }

@@ -9,19 +9,24 @@
 import Foundation
 import UIKit
 
-class WelcomeVC: UIViewController {
+class WelcomeVC: UIViewController, UIAlertViewDelegate {
     @IBOutlet var loginBtn: UIButton!
-    
+    var alert = UIAlertView()
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        alert.title = "Login"
+        alert.addButtonWithTitle("Sign In")
+        alert.alertViewStyle = UIAlertViewStyle.LoginAndPasswordInput
+        alert.addButtonWithTitle("Cancel")
+        alert.delegate = self
     
     }
     
     override func viewWillAppear(animated: Bool) {
-        
+
         // hide the nav bar
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         self.navigationController?.navigationBar.barTintColor = Styler.mainColor
@@ -34,7 +39,13 @@ class WelcomeVC: UIViewController {
     
     @IBAction func loginTouch(sender: AnyObject) {
         // authenticate user through school loop
-        self.performSegueWithIdentifier("mainSegue", sender: self)
+        alert.show()
         
+    }
+    
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+        if buttonIndex != alertView.cancelButtonIndex {
+            self.performSegueWithIdentifier("mainSegue", sender: self)
+        }
     }
 }

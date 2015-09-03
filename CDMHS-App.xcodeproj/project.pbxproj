@@ -32,6 +32,7 @@
 		ED465D721B8E329B005F4993 /* Styler.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED465D711B8E329B005F4993 /* Styler.swift */; };
 		ED465D741B8E36BD005F4993 /* SocialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED465D731B8E36BD005F4993 /* SocialVC.swift */; };
 		ED465D761B8E3726005F4993 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED465D751B8E3726005F4993 /* NewsVC.swift */; };
+		ED923B591B98F0280072A1AF /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED923B581B98F0280072A1AF /* Api.swift */; };
 		EDA3622C1B8BAB2500DA66AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3622B1B8BAB2500DA66AA /* AppDelegate.swift */; };
 		EDA3622E1B8BAB2500DA66AA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3622D1B8BAB2500DA66AA /* HomeVC.swift */; };
 		EDA362301B8BAB2500DA66AA /* GradesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3622F1B8BAB2500DA66AA /* GradesVC.swift */; };
@@ -81,6 +82,7 @@
 		ED465D711B8E329B005F4993 /* Styler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styler.swift; sourceTree = "<group>"; };
 		ED465D731B8E36BD005F4993 /* SocialVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialVC.swift; sourceTree = "<group>"; };
 		ED465D751B8E3726005F4993 /* NewsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		ED923B581B98F0280072A1AF /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		EDA362261B8BAB2500DA66AA /* CDMHS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDMHS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA3622A1B8BAB2500DA66AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA3622B1B8BAB2500DA66AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				ED465D751B8E3726005F4993 /* NewsVC.swift */,
 				ED12C4BC1B8FC9B9000A1452 /* AnnouncementCell.swift */,
 				EDA362551B8BAFD100DA66AA /* WelcomeVC.swift */,
+				ED923B581B98F0280072A1AF /* Api.swift */,
 				EDA362311B8BAB2500DA66AA /* Main.storyboard */,
 				ED12C4C41B8FD00A000A1452 /* SocialMediaOptionCell.swift */,
 				ED12C4C61B8FD05F000A1452 /* SocialMediaOption.swift */,
@@ -331,6 +334,7 @@
 				ED12C4C91B8FDC04000A1452 /* SocialMediaView.swift in Sources */,
 				ED12C4BD1B8FC9B9000A1452 /* AnnouncementCell.swift in Sources */,
 				ED2850441B8E2308005C748A /* ResourceCell.swift in Sources */,
+				ED923B591B98F0280072A1AF /* Api.swift in Sources */,
 				EDA362301B8BAB2500DA66AA /* GradesVC.swift in Sources */,
 				EDA3622C1B8BAB2500DA66AA /* AppDelegate.swift in Sources */,
 				ED465D721B8E329B005F4993 /* Styler.swift in Sources */,

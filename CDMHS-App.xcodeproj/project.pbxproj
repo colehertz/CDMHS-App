@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A911B8A25B89B6B0412A724 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C8B0187DEC6F214E7898EB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		ED12C4AE1B8FC60E000A1452 /* grades.png in Resources */ = {isa = PBXBuildFile; fileRef = ED12C4A21B8FC60E000A1452 /* grades.png */; };
 		ED12C4AF1B8FC60E000A1452 /* grades@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED12C4A31B8FC60E000A1452 /* grades@2x.png */; };
 		ED12C4B01B8FC60E000A1452 /* grades@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = ED12C4A41B8FC60E000A1452 /* grades@3x.png */; };
@@ -26,6 +27,8 @@
 		ED12C4C51B8FD00A000A1452 /* SocialMediaOptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12C4C41B8FD00A000A1452 /* SocialMediaOptionCell.swift */; };
 		ED12C4C71B8FD05F000A1452 /* SocialMediaOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12C4C61B8FD05F000A1452 /* SocialMediaOption.swift */; };
 		ED12C4C91B8FDC04000A1452 /* SocialMediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED12C4C81B8FDC04000A1452 /* SocialMediaView.swift */; };
+		ED23D7F91B98F54400E86E80 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23D7F81B98F54400E86E80 /* UserService.swift */; };
+		ED23D7FB1B98F66900E86E80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23D7FA1B98F66900E86E80 /* User.swift */; };
 		ED2850441B8E2308005C748A /* ResourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2850431B8E2307005C748A /* ResourceCell.swift */; };
 		ED2850461B8E23F2005C748A /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2850451B8E23F2005C748A /* Resource.swift */; };
 		ED2850481B8E2848005C748A /* trident.png in Resources */ = {isa = PBXBuildFile; fileRef = ED2850471B8E2848005C748A /* trident.png */; };
@@ -57,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		014BFFA2B38F7036F37DF205 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6AB3229E847FF8C33FA2A517 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E3C8B0187DEC6F214E7898EB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED12C4A21B8FC60E000A1452 /* grades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grades.png; sourceTree = "<group>"; };
 		ED12C4A31B8FC60E000A1452 /* grades@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grades@2x.png"; sourceTree = "<group>"; };
 		ED12C4A41B8FC60E000A1452 /* grades@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grades@3x.png"; sourceTree = "<group>"; };
@@ -76,6 +82,8 @@
 		ED12C4C41B8FD00A000A1452 /* SocialMediaOptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaOptionCell.swift; sourceTree = "<group>"; };
 		ED12C4C61B8FD05F000A1452 /* SocialMediaOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaOption.swift; sourceTree = "<group>"; };
 		ED12C4C81B8FDC04000A1452 /* SocialMediaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialMediaView.swift; sourceTree = "<group>"; };
+		ED23D7F81B98F54400E86E80 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		ED23D7FA1B98F66900E86E80 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ED2850431B8E2307005C748A /* ResourceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceCell.swift; sourceTree = "<group>"; };
 		ED2850451B8E23F2005C748A /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		ED2850471B8E2848005C748A /* trident.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trident.png; sourceTree = "<group>"; };
@@ -105,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A911B8A25B89B6B0412A724 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +127,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2243922C842F6CEB3B68DCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3C8B0187DEC6F214E7898EB /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE86DABFB30E9115B64240FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AB3229E847FF8C33FA2A517 /* Pods.debug.xcconfig */,
+				014BFFA2B38F7036F37DF205 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED12C4A11B8FC5F0000A1452 /* Tab Bar Icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,12 +165,61 @@
 			name = "Tab Bar Icons";
 			sourceTree = "<group>";
 		};
+		ED923B5A1B98F0640072A1AF /* Service Layer */ = {
+			isa = PBXGroup;
+			children = (
+				ED923B581B98F0280072A1AF /* Api.swift */,
+				ED23D7F81B98F54400E86E80 /* UserService.swift */,
+			);
+			name = "Service Layer";
+			sourceTree = "<group>";
+		};
+		ED923B5B1B98F0800072A1AF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EDA3622D1B8BAB2500DA66AA /* HomeVC.swift */,
+				ED12C4BA1B8FC82D000A1452 /* Announcement.swift */,
+				EDA3622F1B8BAB2500DA66AA /* GradesVC.swift */,
+				ED465D731B8E36BD005F4993 /* SocialVC.swift */,
+				ED465D751B8E3726005F4993 /* NewsVC.swift */,
+				EDA362551B8BAFD100DA66AA /* WelcomeVC.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ED923B5C1B98F0B60072A1AF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EDA362311B8BAB2500DA66AA /* Main.storyboard */,
+				ED12C4C41B8FD00A000A1452 /* SocialMediaOptionCell.swift */,
+				ED2850431B8E2307005C748A /* ResourceCell.swift */,
+				ED465D711B8E329B005F4993 /* Styler.swift */,
+				ED12C4C81B8FDC04000A1452 /* SocialMediaView.swift */,
+				ED12C4BC1B8FC9B9000A1452 /* AnnouncementCell.swift */,
+				EDA362361B8BAB2500DA66AA /* LaunchScreen.xib */,
+				EDA362341B8BAB2500DA66AA /* Images.xcassets */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		ED923B5E1B98F0D90072A1AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ED2850451B8E23F2005C748A /* Resource.swift */,
+				ED12C4C61B8FD05F000A1452 /* SocialMediaOption.swift */,
+				ED23D7FA1B98F66900E86E80 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		EDA3621D1B8BAB2500DA66AA = {
 			isa = PBXGroup;
 			children = (
 				EDA362281B8BAB2500DA66AA /* CDMHS-App */,
 				EDA362401B8BAB2500DA66AA /* CDMHS-AppTests */,
 				EDA362271B8BAB2500DA66AA /* Products */,
+				AE86DABFB30E9115B64240FE /* Pods */,
+				A2243922C842F6CEB3B68DCC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,23 +236,10 @@
 			isa = PBXGroup;
 			children = (
 				EDA3622B1B8BAB2500DA66AA /* AppDelegate.swift */,
-				EDA3622D1B8BAB2500DA66AA /* HomeVC.swift */,
-				ED465D711B8E329B005F4993 /* Styler.swift */,
-				ED2850431B8E2307005C748A /* ResourceCell.swift */,
-				ED2850451B8E23F2005C748A /* Resource.swift */,
-				ED12C4BA1B8FC82D000A1452 /* Announcement.swift */,
-				EDA3622F1B8BAB2500DA66AA /* GradesVC.swift */,
-				ED465D731B8E36BD005F4993 /* SocialVC.swift */,
-				ED465D751B8E3726005F4993 /* NewsVC.swift */,
-				ED12C4BC1B8FC9B9000A1452 /* AnnouncementCell.swift */,
-				EDA362551B8BAFD100DA66AA /* WelcomeVC.swift */,
-				ED923B581B98F0280072A1AF /* Api.swift */,
-				EDA362311B8BAB2500DA66AA /* Main.storyboard */,
-				ED12C4C41B8FD00A000A1452 /* SocialMediaOptionCell.swift */,
-				ED12C4C61B8FD05F000A1452 /* SocialMediaOption.swift */,
-				ED12C4C81B8FDC04000A1452 /* SocialMediaView.swift */,
-				EDA362341B8BAB2500DA66AA /* Images.xcassets */,
-				EDA362361B8BAB2500DA66AA /* LaunchScreen.xib */,
+				ED923B5E1B98F0D90072A1AF /* Models */,
+				ED923B5B1B98F0800072A1AF /* ViewControllers */,
+				ED923B5A1B98F0640072A1AF /* Service Layer */,
+				ED923B5C1B98F0B60072A1AF /* UI */,
 				EDA362291B8BAB2500DA66AA /* Supporting Files */,
 			);
 			path = "CDMHS-App";
@@ -220,9 +282,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDA362471B8BAB2500DA66AA /* Build configuration list for PBXNativeTarget "CDMHS-App" */;
 			buildPhases = (
+				63911670C83971D61E7D5901 /* Check Pods Manifest.lock */,
 				EDA362221B8BAB2500DA66AA /* Sources */,
 				EDA362231B8BAB2500DA66AA /* Frameworks */,
 				EDA362241B8BAB2500DA66AA /* Resources */,
+				715C6ABB90957CB1743FCC37 /* Embed Pods Frameworks */,
+				BF918293F3EC698E227C7367 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,6 +391,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63911670C83971D61E7D5901 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		715C6ABB90957CB1743FCC37 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF918293F3EC698E227C7367 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EDA362221B8BAB2500DA66AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -338,11 +451,13 @@
 				EDA362301B8BAB2500DA66AA /* GradesVC.swift in Sources */,
 				EDA3622C1B8BAB2500DA66AA /* AppDelegate.swift in Sources */,
 				ED465D721B8E329B005F4993 /* Styler.swift in Sources */,
+				ED23D7FB1B98F66900E86E80 /* User.swift in Sources */,
 				ED2850461B8E23F2005C748A /* Resource.swift in Sources */,
 				ED465D741B8E36BD005F4993 /* SocialVC.swift in Sources */,
 				EDA3622E1B8BAB2500DA66AA /* HomeVC.swift in Sources */,
 				EDA362561B8BAFD100DA66AA /* WelcomeVC.swift in Sources */,
 				ED12C4C51B8FD00A000A1452 /* SocialMediaOptionCell.swift in Sources */,
+				ED23D7F91B98F54400E86E80 /* UserService.swift in Sources */,
 				ED12C4BB1B8FC82D000A1452 /* Announcement.swift in Sources */,
 				ED12C4C71B8FD05F000A1452 /* SocialMediaOption.swift in Sources */,
 				ED465D761B8E3726005F4993 /* NewsVC.swift in Sources */,
@@ -470,6 +585,7 @@
 		};
 		EDA362481B8BAB2500DA66AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB3229E847FF8C33FA2A517 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CDMHS-App/Info.plist";
@@ -480,6 +596,7 @@
 		};
 		EDA362491B8BAB2500DA66AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 014BFFA2B38F7036F37DF205 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "CDMHS-App/Info.plist";

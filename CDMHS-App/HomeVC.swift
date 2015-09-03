@@ -22,6 +22,12 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         resourcesTable.delegate = self
         resourcesTable.dataSource = self
         
+        var grades = Resource()
+        grades.title = "My Grades"
+        grades.url = NSURL(string:"https://cdm.schoolloop.com/portal/login?d=x&return_url=1441319901658")
+        resources.append(grades)
+
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,6 +55,10 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         var cell = tableView.dequeueReusableCellWithIdentifier("resourceCell") as! ResourceCell
         cell.titleLabel.text = self.resources[indexPath.row].title
         return cell;
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        var selected = resources[indexPath.row]
     }
 
 

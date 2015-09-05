@@ -14,13 +14,21 @@ class UserService {
     
     static func signIn(username:String, password:String, successFunc:(User)-> Void, errorFunc:(NSError!, NSHTTPURLResponse?) -> Void, badParams:([String])->Void) {
         
-        Alamofire.request(.POST, "\(Api.baseUrl)/signIn/", parameters:["username":username, "password":password])
+        let parameters = [
+            "username": username,
+            "password": password
+        ]
+        
+        Alamofire.request(.POST, "\(Api.baseUrl)/validLogin/", parameters:parameters, encoding:.JSON)
             .response { request, response, data, error in
+                println(response)
                 var json = JSON(data:data!)
-                
                 if (error == nil) {
-                    if let username = json["username"].string, password = json["password"].string {
-                        successFunc(User(username: username, password: password))
+                    if let validLogin = json["result"].bool {
+                        if (validLogin == true) {
+                            var user = User.initUser(username, password: password)
+                            successFunc(user)
+                        }
                     } else {
                         // bad parameters handler here
                     }

@@ -46,8 +46,10 @@ class WelcomeVC: UIViewController, UIAlertViewDelegate {
     func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
         if buttonIndex != alertView.cancelButtonIndex {
             
-            UserService.signIn("",password:"",
+            UserService.signIn("chersowitz",password:"c10395009009",
                 successFunc: { (user) -> Void in
+                    // save the user credentials if the login works for school loop
+                    user.save()
                     self.performSegueWithIdentifier("mainSegue", sender: self)
                 }, errorFunc: {(error, response) -> Void in
                     println("sign In error:\(error)")

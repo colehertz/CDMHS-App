@@ -27,6 +27,10 @@ class UserService {
                     if let validLogin = json["result"].bool {
                         if (validLogin == true) {
                             var user = User.initUser(username, password: password)
+                            
+                            // save the user obj to local db
+                            user.saveToRealm()
+                            
                             successFunc(user)
                         }
                     } else {

@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class EventsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     // array of all announcements to display
-    var announcements = [Announcement]()
+    var events = [Event]()
     var noneLabel = UILabel()
     
     // tableview to display news
@@ -34,7 +34,7 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     override func viewDidAppear(animated: Bool) {
-        if announcements.count < 1 {
+        if events.count < 1 {
             newsTable.hidden = true
             noneLabel.hidden = false
         } else {
@@ -44,7 +44,20 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
-        Styler.styleTopBar(self, title: "NEWS", backHidden: true)
+        Styler.styleTopBar(self, title: "EVENTS", backHidden: true)
+        
+        EventService.getEvents(
+            { (events) -> Void in
+                self.events = events
+                self.newsTable.reloadData()
+                self.showTable()
+            }, errorFunc: {(error, response) -> Void in
+        })
+    }
+    
+    func showTable() {
+        self.newsTable.hidden = false
+        self.noneLabel.hidden = true
     }
     
     override func didReceiveMemoryWarning() {
@@ -56,12 +69,12 @@ class NewsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return announcements.count
+        return events.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("announcementCell") as! AnnouncementCell
-        cell.setObject(announcements[indexPath.row])
+        var cell = tableView.dequeueReusableCellWithIdentifier("eventCell") as! EventCell
+        cell.setupCell(events[indexPath.row])
         
         return cell
     }

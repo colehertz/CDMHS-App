@@ -7,12 +7,14 @@
 //
 
 import Foundation
+import RealmSwift
 
-class User {
+class User: Object {
     private static let USER_DEFAULTS_KEY = "user"
     
-    var username:String = ""
-    var password:String = ""
+    dynamic var username:String = ""
+    dynamic var password:String = ""
+    dynamic var id = Int(arc4random())
     
     static func initUser (username:String, password:String) -> User {
         let user = User()
@@ -36,6 +38,16 @@ class User {
         return User()
     }
     
+    func saveToRealm() {
+        println(Realm.defaultPath)
+        
+        let realm = Realm()
+        realm.write {
+            realm.add(self, update: true)
+        }
+        
+    }
+    
     func save() {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setValue(self.dictionaryValue(), forKey:User.USER_DEFAULTS_KEY)
@@ -56,5 +68,10 @@ class User {
         var user = User.initUser(username, password: password)
         
         return user
+    }
+    
+    // set the primary key to the id
+    override class func primaryKey() -> String {
+        return "id"
     }
 }

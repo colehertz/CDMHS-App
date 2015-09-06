@@ -15,6 +15,7 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     /// Array of resource objects for each cell
     var resources = [Resource]()
+    var selectedResource = Resource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +25,18 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         
         var bellSchedule = Resource()
         bellSchedule.title = "Bell Schedule"
-        bellSchedule.url = NSURL(string:"https://cdm.schoolloop.com/portal/login?d=x&return_url=1441319901658")
+        bellSchedule.url = NSURL(string:"http://cdm.schoolloop.com/file/1385192323175/5949715866280787096.pdf")
         resources.append(bellSchedule)
+        
+        var handbook = Resource()
+        handbook.title = "Handbook"
+        handbook.url = NSURL(string:"http://ampelement.com/cdm/handbook/")
+        resources.append(handbook)
+        
+        var calendar = Resource()
+        calendar.title = "NMUSD Calendar"
+        calendar.url = NSURL(string: "http://cdm.schoolloop.com/file/1385192323175/1313571048212509123.pdf")
+        resources.append(calendar)
 
         
     }
@@ -58,7 +69,18 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
         var selected = resources[indexPath.row]
+        selectedResource = selected
+        self.performSegueWithIdentifier("resourceSegue", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "resourceSegue") {
+            var targetVC = segue.destinationViewController as! ResourceVC
+            targetVC.resource = selectedResource
+        }
     }
 
 

@@ -31,6 +31,12 @@ class WelcomeVC: UIViewController, UIAlertViewDelegate {
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         self.navigationController?.navigationBar.barTintColor = Styler.mainColor
         self.navigationController?.topViewController.navigationController?.navigationBarHidden = true
+        
+        var user = User.get()
+        if user.id > -1 {
+            // user is logged in so segue
+            self.performSegueWithIdentifier("mainSegue", sender: self)
+        }
     }
     
     override func viewDidAppear(animated: Bool) {

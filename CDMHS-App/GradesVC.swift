@@ -22,6 +22,7 @@ class GradesVC: UIViewController, UIWebViewDelegate {
         Styler.styleTopBar(self, title: "GRADES", backHidden: true)
         
         var url = NSURL(string: "https://cdm.schoolloop.com/portal/login?d=x&return_url=1441319901658")
+        self.webView.scalesPageToFit = true
         self.webView.loadRequest(NSURLRequest(URL: url!))
         self.webView.delegate = self
     }

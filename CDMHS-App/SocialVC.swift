@@ -9,8 +9,7 @@
 import Foundation
 import UIKit
 
-class SocialVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet var tableView:UITableView!
+class SocialVC: UITableViewController {
     var mediaOptions = [SocialMediaOption]()
     var selectedObj: SocialMediaOption!
     
@@ -33,23 +32,24 @@ class SocialVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mediaOptions.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("socialCell") as! SocialMediaOptionCell
         cell.setObject(self.mediaOptions[indexPath.row])
         
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedObj = self.mediaOptions[indexPath.row]
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         self.performSegueWithIdentifier("socialPageSegue", sender: self)
     }
     

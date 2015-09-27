@@ -13,9 +13,13 @@ class SocialMediaView: UIViewController {
     
     @IBOutlet var webView: UIWebView!
     var socialMediaObj:SocialMediaOption!
+    var backButton:BackBtn!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.topViewController.navigationItem.title = socialMediaObj.networkName
+        
+        backButton = BackBtn(vc: self)
     }
     
     override func viewWillAppear(animated: Bool) {

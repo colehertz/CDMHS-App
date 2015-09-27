@@ -11,23 +11,30 @@ import SwiftyJSON
 import RealmSwift
 
 class Event: Object {
-
-    var title = ""
-    var date = NSDate()
     
+    dynamic var id = 0
+    dynamic var title = ""
+    dynamic var date = NSDate()
     
-    
-    required init() {
-       super.init()
-
+    override class func primaryKey() -> String {
+        return "id"
     }
+    
     
     func deserializeJSON(json:JSON) {
         var formatter = NSDateFormatter()
         formatter.dateFormat = "M/d/y"
+        
         self.title = json["title"].stringValue
         self.date = formatter.dateFromString(json["date"].stringValue)!
+        
+        // for the next object to be cached, increment the realm id 
+        if let lastCached = EventService.getLastCachedObject() {
+            self.id = lastCached.id + 1
+        }
+        
     }
+    
     
     func stringDate() -> String {
         var formatter = NSDateFormatter()

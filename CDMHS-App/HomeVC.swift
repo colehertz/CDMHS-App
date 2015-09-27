@@ -8,20 +8,21 @@
 
 import UIKit
 
-class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class HomeVC: UITableViewController {
     
-    /// tableview that loads any resources
-    @IBOutlet var resourcesTable: UITableView!
     
     /// Array of resource objects for each cell
     var resources = [Resource]()
     var selectedResource = Resource()
+    var headerImg = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        resourcesTable.delegate = self
-        resourcesTable.dataSource = self
+        headerImg.frame = CGRectMake(0, 0, self.view.frame.width, self.view.frame.height * 0.25)
+        headerImg.image = UIImage(named: "trident.png")
+        headerImg.contentMode = UIViewContentMode.ScaleAspectFit
+        self.tableView.tableHeaderView = headerImg
         
         var bellSchedule = Resource()
         bellSchedule.title = "Bell Schedule"
@@ -37,6 +38,11 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         calendar.title = "NMUSD Calendar"
         calendar.url = NSURL(string: "http://cdm.schoolloop.com/file/1385192323175/1313571048212509123.pdf")
         resources.append(calendar)
+        
+        var webStore = Resource()
+        webStore.title = "Webstore"
+        webStore.url = NSURL(string:"http://webstores.activenetwork.com/school-software/corona_del_mar_higu3/index.php#.Uex2ZxZNDZQ")
+        resources.append(webStore)
 
         
     }
@@ -52,15 +58,15 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.resources.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         // instantiate the cell and set properties
         var cell = tableView.dequeueReusableCellWithIdentifier("resourceCell") as! ResourceCell
@@ -68,7 +74,7 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         return cell;
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
         var selected = resources[indexPath.row]

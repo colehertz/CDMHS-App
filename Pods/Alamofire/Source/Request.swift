@@ -39,7 +39,7 @@ public class Request {
     public let session: NSURLSession
 
     /// The request sent or to be sent to the server.
-    public var request: NSURLRequest { return task.originalRequest }
+    public var request: NSURLRequest { return task.originalRequest! }
 
     /// The response received from the server, if any.
     public var response: NSHTTPURLResponse? { return task.response as? NSHTTPURLResponse }
@@ -75,7 +75,7 @@ public class Request {
 
         :returns: The request.
     */
-    public func authenticate(#user: String, password: String, persistence: NSURLCredentialPersistence = .ForSession) -> Self {
+    public func authenticate(user user: String, password: String, persistence: NSURLCredentialPersistence = .ForSession) -> Self {
         let credential = NSURLCredential(user: user, password: password, persistence: persistence)
 
         return authenticate(usingCredential: credential)
@@ -379,7 +379,7 @@ public class Request {
 
 // MARK: - Printable
 
-extension Request: Printable {
+extension Request: CustomStringConvertible {
     /// The textual representation used when written to an output stream, which includes the HTTP method and URL, as well as the response status code if a response has been received.
     public var description: String {
         var components: [String] = []
@@ -388,7 +388,7 @@ extension Request: Printable {
             components.append(HTTPMethod)
         }
 
-        components.append(request.URL!.absoluteString!)
+        components.append(request.URL!.absoluteString)
 
         if let response = response {
             components.append("(\(response.statusCode))")
@@ -400,7 +400,7 @@ extension Request: Printable {
 
 // MARK: - DebugPrintable
 
-extension Request: DebugPrintable {
+extenCustomDebugStringConvertibleDebugPrintable {
     func cURLRepresentation() -> String {
         var components: [String] = ["$ curl -i"]
 

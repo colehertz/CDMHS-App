@@ -67,7 +67,7 @@ public class MultipartFormData {
             return String(format: "alamofire.boundary.%08x%08x", arc4random(), arc4random())
         }
 
-        static func boundaryData(#boundaryType: BoundaryType, boundary: String) -> NSData {
+        static func boundaryData(boundaryType boundaryType: BoundaryType, boundary: String) -> NSData {
             let boundaryText: String
 
             switch boundaryType {
@@ -146,7 +146,7 @@ public class MultipartFormData {
         :param: data The data to encode into the multipart form data.
         :param: name The name to associate with the data in the `Content-Disposition` HTTP header.
     */
-    public func appendBodyPart(#data: NSData, name: String) {
+    public func appendBodyPart(data data: NSData, name: String) {
         let headers = contentHeaders(name: name)
         let stream = NSInputStream(data: data)
         let length = UInt64(data.length)
@@ -168,7 +168,7 @@ public class MultipartFormData {
         :param: name The name to associate with the data in the `Content-Disposition` HTTP header.
         :param: mimeType The MIME type to associate with the data content type in the `Content-Type` HTTP header.
     */
-    public func appendBodyPart(#data: NSData, name: String, mimeType: String) {
+    public func appendBodyPart(data data: NSData, name: String, mimeType: String) {
         let headers = contentHeaders(name: name, mimeType: mimeType)
         let stream = NSInputStream(data: data)
         let length = UInt64(data.length)
@@ -191,7 +191,7 @@ public class MultipartFormData {
         :param: fileName The filename to associate with the data in the `Content-Disposition` HTTP header.
         :param: mimeType The MIME type to associate with the data in the `Content-Type` HTTP header.
     */
-    public func appendBodyPart(#data: NSData, name: String, fileName: String, mimeType: String) {
+    public func appendBodyPart(data data: NSData, name: String, fileName: String, mimeType: String) {
         let headers = contentHeaders(name: name, fileName: fileName, mimeType: mimeType)
         let stream = NSInputStream(data: data)
         let length = UInt64(data.length)
@@ -216,7 +216,7 @@ public class MultipartFormData {
         :param: fileURL The URL of the file whose content will be encoded into the multipart form data.
         :param: name    The name to associate with the file content in the `Content-Disposition` HTTP header.
     */
-    public func appendBodyPart(#fileURL: NSURL, name: String) {
+    public func appendBodyPart(fileURL fileURL: NSURL, name: String) {
         if let
             fileName = fileURL.lastPathComponent,
             pathExtension = fileURL.pathExtension
@@ -247,7 +247,7 @@ public class MultipartFormData {
         :param: fileName The filename to associate with the file content in the `Content-Disposition` HTTP header.
         :param: mimeType The MIME type to associate with the file content in the `Content-Type` HTTP header.
     */
-    public func appendBodyPart(#fileURL: NSURL, name: String, fileName: String, mimeType: String) {
+    public func appendBodyPart(fileURL fileURL: NSURL, name: String, fileName: String, mimeType: String) {
         let headers = contentHeaders(name: name, fileName: fileName, mimeType: mimeType)
         var isDirectory: ObjCBool = false
         var error: NSError?
@@ -308,7 +308,7 @@ public class MultipartFormData {
         :param: fileName The filename to associate with the stream content in the `Content-Disposition` HTTP header.
         :param: mimeType The MIME type to associate with the stream content in the `Content-Type` HTTP header.
     */
-    public func appendBodyPart(#stream: NSInputStream, length: UInt64, name: String, fileName: String, mimeType: String) {
+    public func appendBodyPart(stream stream: NSInputStream, length: UInt64, name: String, fileName: String, mimeType: String) {
         let headers = contentHeaders(name: name, fileName: fileName, mimeType: mimeType)
         appendBodyPart(stream: stream, length: length, headers: headers)
     }
@@ -326,7 +326,7 @@ public class MultipartFormData {
         :param: length  The content length of the stream.
         :param: headers The HTTP headers for the body part.
     */
-    public func appendBodyPart(#stream: NSInputStream, length: UInt64, headers: [String: String]) {
+    public func appendBodyPart(stream stream: NSInputStream, length: UInt64, headers: [String: String]) {
         let bodyPart = BodyPart(headers: headers, bodyStream: stream, bodyContentLength: length)
         bodyParts.append(bodyPart)
     }
@@ -636,7 +636,7 @@ public class MultipartFormData {
     // MARK: - Private - Mime Type
 
     private func mimeTypeForPathExtension(pathExtension: String) -> String {
-        let identifier = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, pathExtension, nil).takeRetainedValue()
+        let identifier = UTTypeCreatePreferredIdentifierForTag(kUTTagClassFilenameExtension, pathExtension, nil)!.takeRetainedValue()
 
         if let contentType = UTTypeCopyPreferredTagWithClass(identifier, kUTTagClassMIMEType) {
             return contentType.takeRetainedValue() as String
@@ -647,18 +647,18 @@ public class MultipartFormData {
 
     // MARK: - Private - Content Headers
 
-    private func contentHeaders(#name: String) -> [String: String] {
+    private func contentHeaders(name name: String) -> [String: String] {
         return ["Content-Disposition": "form-data; name=\"\(name)\""]
     }
 
-    private func contentHeaders(#name: String, mimeType: String) -> [String: String] {
+    private func contentHeaders(name name: String, mimeType: String) -> [String: String] {
         return [
             "Content-Disposition": "form-data; name=\"\(name)\"",
             "Content-Type": "\(mimeType)"
         ]
     }
 
-    private func contentHeaders(#name: String, fileName: String, mimeType: String) -> [String: String] {
+    private func contentHeaders(name name: String, fileName: String, mimeType: String) -> [String: String] {
         return [
             "Content-Disposition": "form-data; name=\"\(name)\"; filename=\"\(fileName)\"",
             "Content-Type": "\(mimeType)"

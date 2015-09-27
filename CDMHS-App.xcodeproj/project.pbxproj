@@ -40,6 +40,8 @@
 		ED923B591B98F0280072A1AF /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED923B581B98F0280072A1AF /* Api.swift */; };
 		EDA272F91B9CC82900CC59CB /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA272F81B9CC82900CC59CB /* Event.swift */; };
 		EDA272FB1B9CCC9F00CC59CB /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA272FA1B9CCC9F00CC59CB /* EventCell.swift */; };
+		EDA272FD1B9CD10E00CC59CB /* backBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = EDA272FC1B9CD10E00CC59CB /* backBtn.png */; };
+		EDA272FF1B9CD1A100CC59CB /* BackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA272FE1B9CD1A100CC59CB /* BackBtn.swift */; };
 		EDA3622C1B8BAB2500DA66AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3622B1B8BAB2500DA66AA /* AppDelegate.swift */; };
 		EDA3622E1B8BAB2500DA66AA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3622D1B8BAB2500DA66AA /* HomeVC.swift */; };
 		EDA362301B8BAB2500DA66AA /* GradesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA3622F1B8BAB2500DA66AA /* GradesVC.swift */; };
@@ -99,6 +101,8 @@
 		ED923B581B98F0280072A1AF /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		EDA272F81B9CC82900CC59CB /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		EDA272FA1B9CCC9F00CC59CB /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		EDA272FC1B9CD10E00CC59CB /* backBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backBtn.png; sourceTree = "<group>"; };
+		EDA272FE1B9CD1A100CC59CB /* BackBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackBtn.swift; sourceTree = "<group>"; };
 		EDA362261B8BAB2500DA66AA /* CDMHS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDMHS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDA3622A1B8BAB2500DA66AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDA3622B1B8BAB2500DA66AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -187,7 +191,6 @@
 			isa = PBXGroup;
 			children = (
 				EDA3622D1B8BAB2500DA66AA /* HomeVC.swift */,
-				ED12C4BA1B8FC82D000A1452 /* Announcement.swift */,
 				EDA3622F1B8BAB2500DA66AA /* GradesVC.swift */,
 				ED465D731B8E36BD005F4993 /* SocialVC.swift */,
 				ED465D751B8E3726005F4993 /* EventsVC.swift */,
@@ -203,6 +206,7 @@
 				EDA362311B8BAB2500DA66AA /* Main.storyboard */,
 				ED12C4C41B8FD00A000A1452 /* SocialMediaOptionCell.swift */,
 				ED2850431B8E2307005C748A /* ResourceCell.swift */,
+				EDA272FE1B9CD1A100CC59CB /* BackBtn.swift */,
 				ED465D711B8E329B005F4993 /* Styler.swift */,
 				ED12C4C81B8FDC04000A1452 /* SocialMediaView.swift */,
 				ED12C4BC1B8FC9B9000A1452 /* AnnouncementCell.swift */,
@@ -220,6 +224,7 @@
 				ED12C4C61B8FD05F000A1452 /* SocialMediaOption.swift */,
 				ED23D7FA1B98F66900E86E80 /* User.swift */,
 				EDA272F81B9CC82900CC59CB /* Event.swift */,
+				ED12C4BA1B8FC82D000A1452 /* Announcement.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 		EDA362291B8BAB2500DA66AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EDA272FC1B9CD10E00CC59CB /* backBtn.png */,
 				ED12C4A11B8FC5F0000A1452 /* Tab Bar Icons */,
 				EDA3624D1B8BAD3000DA66AA /* welcomeBackground.jpg */,
 				EDA362531B8BAE3100DA66AA /* welcomeBack.jpg */,
@@ -334,6 +340,7 @@
 		EDA3621E1B8BAB2500DA66AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Yep Technologies";
 				TargetAttributes = {
@@ -381,6 +388,7 @@
 				ED12C4B71B8FC60E000A1452 /* socialMedia.png in Resources */,
 				ED12C4B61B8FC60E000A1452 /* news@3x.png in Resources */,
 				ED12C4B81B8FC60E000A1452 /* socialMedia@2x.png in Resources */,
+				EDA272FD1B9CD10E00CC59CB /* backBtn.png in Resources */,
 				ED12C4B21B8FC60E000A1452 /* home@2x.png in Resources */,
 				ED12C4AF1B8FC60E000A1452 /* grades@2x.png in Resources */,
 				EDA362521B8BADC800DA66AA /* cdmLogo.png in Resources */,
@@ -475,6 +483,7 @@
 				ED23D7F91B98F54400E86E80 /* UserService.swift in Sources */,
 				ED1023281B9BA835000FD05E /* EventService.swift in Sources */,
 				ED12C4BB1B8FC82D000A1452 /* Announcement.swift in Sources */,
+				EDA272FF1B9CD1A100CC59CB /* BackBtn.swift in Sources */,
 				ED12C4C71B8FD05F000A1452 /* SocialMediaOption.swift in Sources */,
 				ED465D761B8E3726005F4993 /* EventsVC.swift in Sources */,
 			);
@@ -604,6 +613,11 @@
 			baseConfigurationReference = 6AB3229E847FF8C33FA2A517 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yep Technologies LLC (7DGASTKES5)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "CDMHS-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -615,6 +629,11 @@
 			baseConfigurationReference = 014BFFA2B38F7036F37DF205 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Yep Technologies LLC (7DGASTKES5)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "CDMHS-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

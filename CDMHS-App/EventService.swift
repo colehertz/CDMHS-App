@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import SwiftyJSON
+import RealmSwift
 
 class EventService {
     
@@ -20,6 +21,7 @@ class EventService {
                 if error == nil {
                     var json = JSON(data:data!)
                     var events = [Event]()
+                    let realm = Realm()
                     
                     if let eventsArray = json["events"].array {
                         for e in eventsArray {
@@ -27,13 +29,29 @@ class EventService {
                             var event = Event()
                             event.deserializeJSON(e)
                             events.append(event)
+                            
+                            realm.write {
+                                realm.add(event, update: true)
+                            }
                         }
+                        
                         successFunc(events: events)
                     }
                 } else {
                     errorFunc(error, response)
                 }
         }
+    }
+    
+    static func getLastCachedObject() -> Event? {
+        let realm = Realm()
+        let sortedEvents = realm.objects(Event).sorted("id", ascending: false)
+        
+        if (sortedEvents.count > 0 ) {
+            return sortedEvents[0]
+        }
+        
+        return nil
     }
 
 }

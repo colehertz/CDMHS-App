@@ -4,4 +4,4 @@ pod 'Alamofire', '~> 1.2'
 pod 'SwiftyJSON', '~> 2.2'
 pod 'RxSwift', '~> 1.7'
 pod 'RealmSwift', '~> 0.93.2'
-
+pod 'Parse'

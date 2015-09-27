@@ -9,20 +9,15 @@
 import Foundation
 import UIKit
 
-class EventsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class EventsVC: UITableViewController {
     // array of all announcements to display
     var events = [Event]()
     var noneLabel = UILabel()
     
-    // tableview to display news
-    @IBOutlet var newsTable:UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // set tableview datasource and delegate
-        newsTable.dataSource = self
-        newsTable.delegate = self
         
         noneLabel.frame = CGRectMake(self.view.frame.width/2 - 100, self.view.frame.height/2 - 10, 200, 20)
         noneLabel.textAlignment = .Center
@@ -35,10 +30,8 @@ class EventsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     override func viewDidAppear(animated: Bool) {
         if events.count < 1 {
-            newsTable.hidden = true
             noneLabel.hidden = false
         } else {
-            newsTable.hidden = false
             noneLabel.hidden = true
         }
     }
@@ -49,14 +42,14 @@ class EventsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         EventService.getEvents(
             { (events) -> Void in
                 self.events = events
-                self.newsTable.reloadData()
+                self.tableView.reloadData()
                 self.showTable()
             }, errorFunc: {(error, response) -> Void in
         })
     }
     
     func showTable() {
-        self.newsTable.hidden = false
+        self.tableView.hidden = false
         self.noneLabel.hidden = true
     }
     
@@ -64,15 +57,15 @@ class EventsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return events.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier("eventCell") as! EventCell
         cell.setupCell(events[indexPath.row])
         

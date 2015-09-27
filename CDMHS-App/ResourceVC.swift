@@ -12,13 +12,19 @@ import UIKit
 class ResourceVC: UIViewController {
     @IBOutlet var webView: UIWebView!
     var resource = Resource()
+    var backButton:BackBtn!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.webView.scalesPageToFit = true
+        
+        self.navigationController?.topViewController.title = resource.title
+        backButton = BackBtn(vc: self)
     }
     
     override func viewWillAppear(animated: Bool) {
-        
+       
     }
     
     override func viewDidAppear(animated: Bool) {

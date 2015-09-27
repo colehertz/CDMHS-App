@@ -39,11 +39,15 @@ class User: Object {
     }
     
     func saveToRealm() {
-        println(Realm.defaultPath)
+        print(Realm.Configuration.defaultConfiguration)
         
-        let realm = Realm()
-        realm.write {
-            realm.add(self, update: true)
+        do {
+            let realm = try Realm()
+            realm.write {
+                realm.add(self, update: true)
+            }
+        } catch {
+            print("realm error")
         }
         
     }

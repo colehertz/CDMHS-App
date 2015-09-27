@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-import SwiftyJSON
+
 
 class EventService {
     
@@ -23,7 +23,7 @@ class EventService {
                     
                     if let eventsArray = json["events"].array {
                         for e in eventsArray {
-                            println(e)
+                            print(e)
                             var event = Event()
                             event.deserializeJSON(e)
                             events.append(event)

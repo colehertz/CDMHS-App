@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-import SwiftyJSON
+
 
 class UserService {
     
@@ -21,7 +21,7 @@ class UserService {
         
         Alamofire.request(.POST, "\(Api.baseUrl)/validLogin/", parameters:parameters, encoding:.JSON)
             .response { request, response, data, error in
-                println(response)
+                print(response)
                 var json = JSON(data:data!)
                 if (error == nil) {
                     if let validLogin = json["result"].bool {

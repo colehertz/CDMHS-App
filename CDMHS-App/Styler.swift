@@ -20,9 +20,9 @@ class Styler {
     static var mainFont = UIFont(name: Styler.fontName, size: 22)
     
     static func styleTopBar(vc:UIViewController, title:String, backHidden:Bool) {
-       vc.navigationController?.topViewController.navigationController?.navigationBarHidden = false
-       vc.navigationController?.topViewController.title = title
-       vc.navigationController?.topViewController.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: Styler.mainFont!, NSForegroundColorAttributeName : UIColor.whiteColor()]
+       vc.navigationController?.topViewController!.navigationController?.navigationBarHidden = false
+       vc.navigationController?.topViewController!.title = title
+       vc.navigationController?.topViewController!.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: Styler.mainFont!, NSForegroundColorAttributeName : UIColor.whiteColor()]
        
         if (backHidden == true) {
             vc.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)

@@ -20,7 +20,7 @@ class SocialVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         tableView.delegate = self
         tableView.dataSource = self
         
-        mediaOptions.append(SocialMediaOption(name: "Instagram", logo: UIImage(named: "instagramIcon.png")!, url:NSURL(string:"http://instagram.com/cdmasb")!))
+        mediaOptions.append(SocialMediaOption(name: "Instagram", logo: UIImage(named: "instagramIcon.png")!, url:NSURL(string:"https://instagram.com/cdmasb")!))
         mediaOptions.append(SocialMediaOption(name: "Twitter", logo: UIImage(named: "twitterIcon.png")!, url:NSURL(string: "https://mobile.twitter.com/CdMASB")!))
      
     }

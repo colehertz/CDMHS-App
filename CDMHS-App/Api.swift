@@ -9,5 +9,5 @@
 import Foundation
 
 struct Api {
-    static let baseUrl = "http://127.0.0.1:80/api"
+    static let baseUrl = "http://hersowitzproject.com/api"
 }

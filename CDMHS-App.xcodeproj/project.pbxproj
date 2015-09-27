@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A911B8A25B89B6B0412A724 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3C8B0187DEC6F214E7898EB /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		ED1023241B9B7F96000FD05E /* ResourceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1023231B9B7F96000FD05E /* ResourceVC.swift */; };
 		ED1023281B9BA835000FD05E /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED1023271B9BA835000FD05E /* EventService.swift */; };
 		ED12C4AE1B8FC60E000A1452 /* grades.png in Resources */ = {isa = PBXBuildFile; fileRef = ED12C4A21B8FC60E000A1452 /* grades.png */; };
@@ -51,6 +50,31 @@
 		EDA362521B8BADC800DA66AA /* cdmLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EDA362511B8BADC800DA66AA /* cdmLogo.png */; };
 		EDA362541B8BAE3100DA66AA /* welcomeBack.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDA362531B8BAE3100DA66AA /* welcomeBack.jpg */; };
 		EDA362561B8BAFD100DA66AA /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA362551B8BAFD100DA66AA /* WelcomeVC.swift */; };
+		EDFA04A01BB86C78001D424B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA049F1BB86C78001D424B /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		EDFA04C51BB86D4A001D424B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA04BC1BB86CF4001D424B /* Alamofire.framework */; };
+		EDFA04C61BB86D4A001D424B /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA04BC1BB86CF4001D424B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDFA05091BB86F25001D424B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05021BB86F07001D424B /* RxCocoa.framework */; };
+		EDFA050A1BB86F25001D424B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA04FE1BB86F07001D424B /* RxSwift.framework */; };
+		EDFA050D1BB86FBC001D424B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA050B1BB86FBC001D424B /* Realm.framework */; };
+		EDFA050E1BB86FBC001D424B /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA050B1BB86FBC001D424B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDFA050F1BB86FBC001D424B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA050C1BB86FBC001D424B /* RealmSwift.framework */; };
+		EDFA05101BB86FBC001D424B /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA050C1BB86FBC001D424B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDFA051A1BB8760A001D424B /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA04FE1BB86F07001D424B /* RxSwift.framework */; };
+		EDFA051B1BB8760A001D424B /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA04FE1BB86F07001D424B /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDFA051E1BB8760A001D424B /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05021BB86F07001D424B /* RxCocoa.framework */; };
+		EDFA051F1BB8760A001D424B /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05021BB86F07001D424B /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDFA05311BB8771D001D424B /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA052F1BB8771D001D424B /* Bolts.framework */; settings = {ASSET_TAGS = (); }; };
+		EDFA05321BB8771D001D424B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05301BB8771D001D424B /* Parse.framework */; settings = {ASSET_TAGS = (); }; };
+		EDFA05341BB87737001D424B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05331BB87737001D424B /* AudioToolbox.framework */; };
+		EDFA05361BB8773D001D424B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05351BB8773D001D424B /* CFNetwork.framework */; };
+		EDFA05381BB87745001D424B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05371BB87745001D424B /* CoreGraphics.framework */; };
+		EDFA053A1BB8774C001D424B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05391BB8774C001D424B /* CoreLocation.framework */; };
+		EDFA053C1BB87753001D424B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA053B1BB87753001D424B /* QuartzCore.framework */; };
+		EDFA053E1BB8775C001D424B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA053D1BB8775C001D424B /* Security.framework */; };
+		EDFA05401BB87763001D424B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA053F1BB87763001D424B /* StoreKit.framework */; };
+		EDFA05421BB87769001D424B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05411BB87769001D424B /* SystemConfiguration.framework */; };
+		EDFA05441BB8777E001D424B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05431BB8777E001D424B /* libz.tbd */; };
+		EDFA05461BB87787001D424B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05451BB87787001D424B /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +85,162 @@
 			remoteGlobalIDString = EDA362251B8BAB2500DA66AA;
 			remoteInfo = "CDMHS-App";
 		};
+		EDFA04A91BB86CDD001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04A11BB86CDD001D424B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		EDFA04AB1BB86CDD001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04A11BB86CDD001D424B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		EDFA04AD1BB86CDD001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04A11BB86CDD001D424B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		EDFA04AF1BB86CDD001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04A11BB86CDD001D424B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		EDFA04B11BB86CDD001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04A11BB86CDD001D424B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		EDFA04BB1BB86CF4001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04B31BB86CF4001D424B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		EDFA04BD1BB86CF4001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04B31BB86CF4001D424B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		EDFA04BF1BB86CF4001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04B31BB86CF4001D424B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		EDFA04C11BB86CF4001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04B31BB86CF4001D424B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		EDFA04C31BB86CF4001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04B31BB86CF4001D424B /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		EDFA04C71BB86D4A001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04B31BB86CF4001D424B /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		EDFA04FD1BB86F07001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04F41BB86F07001D424B /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8A56AD71AD7424700B4673B;
+			remoteInfo = "RxSwift-iOS";
+		};
+		EDFA04FF1BB86F07001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04F41BB86F07001D424B /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C88BB8711B07E5ED0064D411;
+			remoteInfo = "RxSwift-OSX";
+		};
+		EDFA05011BB86F07001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04F41BB86F07001D424B /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C809396D1B8A71760088E94D;
+			remoteInfo = "RxCocoa-iOS";
+		};
+		EDFA05031BB86F07001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04F41BB86F07001D424B /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C80939E71B8A71840088E94D;
+			remoteInfo = "RxCocoa-OSX";
+		};
+		EDFA05051BB86F07001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04F41BB86F07001D424B /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8093BC71B8A71F00088E94D;
+			remoteInfo = "RxBlocking-iOS";
+		};
+		EDFA05071BB86F07001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04F41BB86F07001D424B /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8093C451B8A71FC0088E94D;
+			remoteInfo = "RxBlocking-OSX";
+		};
+		EDFA051C1BB8760A001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04F41BB86F07001D424B /* Rx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C8A56AD61AD7424700B4673B;
+			remoteInfo = "RxSwift-iOS";
+		};
+		EDFA05201BB8760A001D424B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDFA04F41BB86F07001D424B /* Rx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C80938F51B8A71760088E94D;
+			remoteInfo = "RxCocoa-iOS";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EDFA04C91BB86D4A001D424B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EDFA051B1BB8760A001D424B /* RxSwift.framework in Embed Frameworks */,
+				EDFA050E1BB86FBC001D424B /* Realm.framework in Embed Frameworks */,
+				EDFA04C61BB86D4A001D424B /* Alamofire.framework in Embed Frameworks */,
+				EDFA051F1BB8760A001D424B /* RxCocoa.framework in Embed Frameworks */,
+				EDFA05101BB86FBC001D424B /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		014BFFA2B38F7036F37DF205 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6AB3229E847FF8C33FA2A517 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		E3C8B0187DEC6F214E7898EB /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1023231B9B7F96000FD05E /* ResourceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceVC.swift; sourceTree = "<group>"; };
 		ED1023271B9BA835000FD05E /* EventService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		ED12C4A21B8FC60E000A1452 /* grades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grades.png; sourceTree = "<group>"; };
@@ -114,6 +288,24 @@
 		EDA362511B8BADC800DA66AA /* cdmLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cdmLogo.png; sourceTree = "<group>"; };
 		EDA362531B8BAE3100DA66AA /* welcomeBack.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = welcomeBack.jpg; sourceTree = "<group>"; };
 		EDA362551B8BAFD100DA66AA /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		EDFA049F1BB86C78001D424B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		EDFA04A11BB86CDD001D424B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		EDFA04B31BB86CF4001D424B /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		EDFA04F41BB86F07001D424B /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = RxSwift/Rx.xcodeproj; sourceTree = "<group>"; };
+		EDFA050B1BB86FBC001D424B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		EDFA050C1BB86FBC001D424B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		EDFA052F1BB8771D001D424B /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		EDFA05301BB8771D001D424B /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		EDFA05331BB87737001D424B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EDFA05351BB8773D001D424B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EDFA05371BB87745001D424B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EDFA05391BB8774C001D424B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EDFA053B1BB87753001D424B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EDFA053D1BB8775C001D424B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EDFA053F1BB87763001D424B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EDFA05411BB87769001D424B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EDFA05431BB8777E001D424B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		EDFA05451BB87787001D424B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +313,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A911B8A25B89B6B0412A724 /* Pods.framework in Frameworks */,
+				EDFA05461BB87787001D424B /* libsqlite3.tbd in Frameworks */,
+				EDFA05441BB8777E001D424B /* libz.tbd in Frameworks */,
+				EDFA05421BB87769001D424B /* SystemConfiguration.framework in Frameworks */,
+				EDFA05401BB87763001D424B /* StoreKit.framework in Frameworks */,
+				EDFA053E1BB8775C001D424B /* Security.framework in Frameworks */,
+				EDFA053C1BB87753001D424B /* QuartzCore.framework in Frameworks */,
+				EDFA053A1BB8774C001D424B /* CoreLocation.framework in Frameworks */,
+				EDFA05381BB87745001D424B /* CoreGraphics.framework in Frameworks */,
+				EDFA05361BB8773D001D424B /* CFNetwork.framework in Frameworks */,
+				EDFA05341BB87737001D424B /* AudioToolbox.framework in Frameworks */,
+				EDFA050D1BB86FBC001D424B /* Realm.framework in Frameworks */,
+				EDFA05321BB8771D001D424B /* Parse.framework in Frameworks */,
+				EDFA050F1BB86FBC001D424B /* RealmSwift.framework in Frameworks */,
+				EDFA051E1BB8760A001D424B /* RxCocoa.framework in Frameworks */,
+				EDFA051A1BB8760A001D424B /* RxSwift.framework in Frameworks */,
+				EDFA05091BB86F25001D424B /* RxCocoa.framework in Frameworks */,
+				EDFA050A1BB86F25001D424B /* RxSwift.framework in Frameworks */,
+				EDFA04C51BB86D4A001D424B /* Alamofire.framework in Frameworks */,
+				EDFA05311BB8771D001D424B /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +348,19 @@
 		A2243922C842F6CEB3B68DCC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E3C8B0187DEC6F214E7898EB /* Pods.framework */,
+				EDFA05451BB87787001D424B /* libsqlite3.tbd */,
+				EDFA05431BB8777E001D424B /* libz.tbd */,
+				EDFA05411BB87769001D424B /* SystemConfiguration.framework */,
+				EDFA053F1BB87763001D424B /* StoreKit.framework */,
+				EDFA053D1BB8775C001D424B /* Security.framework */,
+				EDFA053B1BB87753001D424B /* QuartzCore.framework */,
+				EDFA05391BB8774C001D424B /* CoreLocation.framework */,
+				EDFA05371BB87745001D424B /* CoreGraphics.framework */,
+				EDFA05351BB8773D001D424B /* CFNetwork.framework */,
+				EDFA05331BB87737001D424B /* AudioToolbox.framework */,
+				EDFA052F1BB8771D001D424B /* Bolts.framework */,
+				EDFA05301BB8771D001D424B /* Parse.framework */,
+				EDFA04A11BB86CDD001D424B /* Alamofire.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -227,6 +449,10 @@
 		EDA3621D1B8BAB2500DA66AA = {
 			isa = PBXGroup;
 			children = (
+				EDFA050B1BB86FBC001D424B /* Realm.framework */,
+				EDFA050C1BB86FBC001D424B /* RealmSwift.framework */,
+				EDFA04F41BB86F07001D424B /* Rx.xcodeproj */,
+				EDFA04B31BB86CF4001D424B /* Alamofire.xcodeproj */,
 				EDA362281B8BAB2500DA66AA /* CDMHS-App */,
 				EDA362401B8BAB2500DA66AA /* CDMHS-AppTests */,
 				EDA362271B8BAB2500DA66AA /* Products */,
@@ -247,6 +473,7 @@
 		EDA362281B8BAB2500DA66AA /* CDMHS-App */ = {
 			isa = PBXGroup;
 			children = (
+				EDFA049F1BB86C78001D424B /* SwiftyJSON.swift */,
 				EDA3622B1B8BAB2500DA66AA /* AppDelegate.swift */,
 				ED923B5E1B98F0D90072A1AF /* Models */,
 				ED923B5B1B98F0800072A1AF /* ViewControllers */,
@@ -287,6 +514,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EDFA04A21BB86CDD001D424B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDFA04AA1BB86CDD001D424B /* Alamofire.framework */,
+				EDFA04AC1BB86CDD001D424B /* Alamofire.framework */,
+				EDFA04AE1BB86CDD001D424B /* Alamofire.framework */,
+				EDFA04B01BB86CDD001D424B /* Alamofire iOS Tests.xctest */,
+				EDFA04B21BB86CDD001D424B /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDFA04B41BB86CF4001D424B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDFA04BC1BB86CF4001D424B /* Alamofire.framework */,
+				EDFA04BE1BB86CF4001D424B /* Alamofire.framework */,
+				EDFA04C01BB86CF4001D424B /* Alamofire.framework */,
+				EDFA04C21BB86CF4001D424B /* Alamofire iOS Tests.xctest */,
+				EDFA04C41BB86CF4001D424B /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDFA04F51BB86F07001D424B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDFA04FE1BB86F07001D424B /* RxSwift.framework */,
+				EDFA05001BB86F07001D424B /* RxSwift.framework */,
+				EDFA05021BB86F07001D424B /* RxCocoa.framework */,
+				EDFA05041BB86F07001D424B /* RxCocoa.framework */,
+				EDFA05061BB86F07001D424B /* RxBlocking.framework */,
+				EDFA05081BB86F07001D424B /* RxBlocking.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -294,16 +558,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDA362471B8BAB2500DA66AA /* Build configuration list for PBXNativeTarget "CDMHS-App" */;
 			buildPhases = (
-				63911670C83971D61E7D5901 /* Check Pods Manifest.lock */,
 				EDA362221B8BAB2500DA66AA /* Sources */,
 				EDA362231B8BAB2500DA66AA /* Frameworks */,
 				EDA362241B8BAB2500DA66AA /* Resources */,
-				715C6ABB90957CB1743FCC37 /* Embed Pods Frameworks */,
-				BF918293F3EC698E227C7367 /* Copy Pods Resources */,
+				EDFA04C91BB86D4A001D424B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EDFA04C81BB86D4A001D424B /* PBXTargetDependency */,
+				EDFA051D1BB8760A001D424B /* PBXTargetDependency */,
+				EDFA05211BB8760A001D424B /* PBXTargetDependency */,
 			);
 			name = "CDMHS-App";
 			productName = "CDMHS-App";
@@ -334,11 +599,18 @@
 		EDA3621E1B8BAB2500DA66AA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Yep Technologies";
 				TargetAttributes = {
 					EDA362251B8BAB2500DA66AA = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 7DGASTKES5;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					EDA3623C1B8BAB2500DA66AA = {
 						CreatedOnToolsVersion = 6.4;
@@ -357,6 +629,20 @@
 			mainGroup = EDA3621D1B8BAB2500DA66AA;
 			productRefGroup = EDA362271B8BAB2500DA66AA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EDFA04B41BB86CF4001D424B /* Products */;
+					ProjectRef = EDFA04B31BB86CF4001D424B /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = EDFA04A21BB86CDD001D424B /* Products */;
+					ProjectRef = EDFA04A11BB86CDD001D424B /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = EDFA04F51BB86F07001D424B /* Products */;
+					ProjectRef = EDFA04F41BB86F07001D424B /* Rx.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EDA362251B8BAB2500DA66AA /* CDMHS-App */,
@@ -364,6 +650,121 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EDFA04AA1BB86CDD001D424B /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EDFA04A91BB86CDD001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA04AC1BB86CDD001D424B /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EDFA04AB1BB86CDD001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA04AE1BB86CDD001D424B /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EDFA04AD1BB86CDD001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA04B01BB86CDD001D424B /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = EDFA04AF1BB86CDD001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA04B21BB86CDD001D424B /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = EDFA04B11BB86CDD001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA04BC1BB86CF4001D424B /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EDFA04BB1BB86CF4001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA04BE1BB86CF4001D424B /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EDFA04BD1BB86CF4001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA04C01BB86CF4001D424B /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = EDFA04BF1BB86CF4001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA04C21BB86CF4001D424B /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = EDFA04C11BB86CF4001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA04C41BB86CF4001D424B /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = EDFA04C31BB86CF4001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA04FE1BB86F07001D424B /* RxSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxSwift.framework;
+			remoteRef = EDFA04FD1BB86F07001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA05001BB86F07001D424B /* RxSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxSwift.framework;
+			remoteRef = EDFA04FF1BB86F07001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA05021BB86F07001D424B /* RxCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxCocoa.framework;
+			remoteRef = EDFA05011BB86F07001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA05041BB86F07001D424B /* RxCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxCocoa.framework;
+			remoteRef = EDFA05031BB86F07001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA05061BB86F07001D424B /* RxBlocking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxBlocking.framework;
+			remoteRef = EDFA05051BB86F07001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EDFA05081BB86F07001D424B /* RxBlocking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxBlocking.framework;
+			remoteRef = EDFA05071BB86F07001D424B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EDA362241B8BAB2500DA66AA /* Resources */ = {
@@ -403,54 +804,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		63911670C83971D61E7D5901 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		715C6ABB90957CB1743FCC37 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BF918293F3EC698E227C7367 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		EDA362221B8BAB2500DA66AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -459,6 +812,7 @@
 				ED12C4C91B8FDC04000A1452 /* SocialMediaView.swift in Sources */,
 				ED12C4BD1B8FC9B9000A1452 /* AnnouncementCell.swift in Sources */,
 				ED2850441B8E2308005C748A /* ResourceCell.swift in Sources */,
+				EDFA04A01BB86C78001D424B /* SwiftyJSON.swift in Sources */,
 				ED923B591B98F0280072A1AF /* Api.swift in Sources */,
 				EDA272F91B9CC82900CC59CB /* Event.swift in Sources */,
 				EDA362301B8BAB2500DA66AA /* GradesVC.swift in Sources */,
@@ -495,6 +849,21 @@
 			isa = PBXTargetDependency;
 			target = EDA362251B8BAB2500DA66AA /* CDMHS-App */;
 			targetProxy = EDA3623E1B8BAB2500DA66AA /* PBXContainerItemProxy */;
+		};
+		EDFA04C81BB86D4A001D424B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = EDFA04C71BB86D4A001D424B /* PBXContainerItemProxy */;
+		};
+		EDFA051D1BB8760A001D424B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RxSwift-iOS";
+			targetProxy = EDFA051C1BB8760A001D424B /* PBXContainerItemProxy */;
+		};
+		EDFA05211BB8760A001D424B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "RxCocoa-iOS";
+			targetProxy = EDFA05201BB8760A001D424B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -539,6 +908,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -604,9 +974,19 @@
 			baseConfigurationReference = 6AB3229E847FF8C33FA2A517 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Russell Hersowitz (3GXG5PPEY6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Russell Hersowitz (3GXG5PPEY6)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "CDMHS-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yeptechnologies.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8fd6fbf6-3bbe-4842-97ba-bad258b59706";
 			};
 			name = Debug;
 		};
@@ -615,9 +995,19 @@
 			baseConfigurationReference = 014BFFA2B38F7036F37DF205 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Russell Hersowitz (3GXG5PPEY6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Russell Hersowitz (3GXG5PPEY6)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "CDMHS-App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yeptechnologies.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8fd6fbf6-3bbe-4842-97ba-bad258b59706";
 			};
 			name = Release;
 		};
@@ -635,6 +1025,7 @@
 				);
 				INFOPLIST_FILE = "CDMHS-AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yeptechnologies.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDMHS-App.app/CDMHS-App";
 			};
@@ -650,6 +1041,7 @@
 				);
 				INFOPLIST_FILE = "CDMHS-AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yeptechnologies.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDMHS-App.app/CDMHS-App";
 			};

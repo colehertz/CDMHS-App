@@ -30,7 +30,7 @@ class WelcomeVC: UIViewController, UIAlertViewDelegate {
         // hide the nav bar
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
         self.navigationController?.navigationBar.barTintColor = Styler.mainColor
-        self.navigationController?.topViewController.navigationController?.navigationBarHidden = true
+        self.navigationController?.topViewController!.navigationController?.navigationBarHidden = true
         
         var user = User.get()
         if user.id > -1 {
@@ -58,7 +58,7 @@ class WelcomeVC: UIViewController, UIAlertViewDelegate {
                     user.save()
                     self.performSegueWithIdentifier("mainSegue", sender: self)
                 }, errorFunc: {(error, response) -> Void in
-                    println("sign In error:\(error)")
+                    print("sign In error:\(error)")
                 }, badParams: {(params) -> Void in
             
             })

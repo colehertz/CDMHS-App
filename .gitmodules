@@ -1,0 +1,6 @@
+[submodule "Alamofire"]
+	path = Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "RxSwift"]
+	path = RxSwift
+	url = https://github.com/ReactiveX/RxSwift.git

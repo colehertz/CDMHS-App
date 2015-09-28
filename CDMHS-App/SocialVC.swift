@@ -50,6 +50,7 @@ class SocialVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         selectedObj = self.mediaOptions[indexPath.row]
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
         self.performSegueWithIdentifier("socialPageSegue", sender: self)
     }
     

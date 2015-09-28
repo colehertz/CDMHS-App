@@ -15,9 +15,13 @@ class ResourceVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
     }
     
     override func viewWillAppear(animated: Bool) {
+        Styler.styleTopBar(self, title: resource.title, backHidden: false)
+        let backBtn = BackBtn(vc: self)
         
     }
     

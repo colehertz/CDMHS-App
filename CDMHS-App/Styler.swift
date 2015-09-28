@@ -27,8 +27,15 @@ class Styler {
         if (backHidden == true) {
             vc.tabBarController?.navigationItem.setHidesBackButton(true, animated: false)
         } else {
-            vc.tabBarController?.navigationItem.setHidesBackButton(false, animated: true)
+            vc.tabBarController?.navigationItem.setHidesBackButton(true, animated: true)
+            
+           
         }
         
     }
+    
+    func backTouch(sender: AnyObject!) {
+        sender.navigationController?!.popViewControllerAnimated(true)
+    }
+    
 }

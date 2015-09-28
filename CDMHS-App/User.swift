@@ -55,6 +55,8 @@ class User: Object {
     func save() {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setValue(self.dictionaryValue(), forKey:User.USER_DEFAULTS_KEY)
+        
+        self.saveToRealm()
     }
     
     func dictionaryValue() -> [String:String] {

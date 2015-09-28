@@ -9,11 +9,12 @@
 import Foundation
 import RealmSwift
 
+
 class Event: Object {
 
-    var title = ""
-    var date = NSDate()
-    
+    dynamic var title = ""
+    dynamic var date = NSDate()
+    dynamic var id = 0
     
     
     required init() {
@@ -22,15 +23,21 @@ class Event: Object {
     }
     
     func deserializeJSON(json:JSON) {
-        var formatter = NSDateFormatter()
+        let formatter = NSDateFormatter()
         formatter.dateFormat = "M/d/y"
         self.title = json["title"].stringValue
         self.date = formatter.dateFromString(json["date"].stringValue)!
+        self.id = Int(arc4random())
     }
     
     func stringDate() -> String {
-        var formatter = NSDateFormatter()
+        let formatter = NSDateFormatter()
         formatter.dateFormat = "M/d/y"
        return formatter.stringFromDate(self.date)
+    }
+    
+    // set the primary key to the id
+    override class func primaryKey() -> String {
+        return "id"
     }
 }

@@ -75,6 +75,12 @@
 		EDFA05421BB87769001D424B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05411BB87769001D424B /* SystemConfiguration.framework */; };
 		EDFA05441BB8777E001D424B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05431BB8777E001D424B /* libz.tbd */; };
 		EDFA05461BB87787001D424B /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFA05451BB87787001D424B /* libsqlite3.tbd */; };
+		EDFA05481BB8988C001D424B /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EDFA05471BB8988C001D424B /* backButton.png */; settings = {ASSET_TAGS = (); }; };
+		EDFA054A1BB89AC0001D424B /* BackBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA05491BB89AC0001D424B /* BackBtn.swift */; settings = {ASSET_TAGS = (); }; };
+		EDFA054C1BB8A11F001D424B /* LoginAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA054B1BB8A11F001D424B /* LoginAlert.swift */; settings = {ASSET_TAGS = (); }; };
+		EDFA054E1BB8EE48001D424B /* RxCallResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA054D1BB8EE48001D424B /* RxCallResult.swift */; settings = {ASSET_TAGS = (); }; };
+		EDFA05501BB8EE6E001D424B /* ServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA054F1BB8EE6E001D424B /* ServiceResponse.swift */; settings = {ASSET_TAGS = (); }; };
+		EDFA05521BB8FAC3001D424B /* icon in Resources */ = {isa = PBXBuildFile; fileRef = EDFA05511BB8FAC3001D424B /* icon */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -306,6 +312,12 @@
 		EDFA05411BB87769001D424B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EDFA05431BB8777E001D424B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		EDFA05451BB87787001D424B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EDFA05471BB8988C001D424B /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		EDFA05491BB89AC0001D424B /* BackBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackBtn.swift; sourceTree = "<group>"; };
+		EDFA054B1BB8A11F001D424B /* LoginAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAlert.swift; sourceTree = "<group>"; };
+		EDFA054D1BB8EE48001D424B /* RxCallResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCallResult.swift; sourceTree = "<group>"; };
+		EDFA054F1BB8EE6E001D424B /* ServiceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceResponse.swift; sourceTree = "<group>"; };
+		EDFA05511BB8FAC3001D424B /* icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,9 +410,11 @@
 		ED923B5A1B98F0640072A1AF /* Service Layer */ = {
 			isa = PBXGroup;
 			children = (
+				EDFA054D1BB8EE48001D424B /* RxCallResult.swift */,
 				ED923B581B98F0280072A1AF /* Api.swift */,
 				ED23D7F81B98F54400E86E80 /* UserService.swift */,
 				ED1023271B9BA835000FD05E /* EventService.swift */,
+				EDFA054F1BB8EE6E001D424B /* ServiceResponse.swift */,
 			);
 			name = "Service Layer";
 			sourceTree = "<group>";
@@ -423,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				EDA362311B8BAB2500DA66AA /* Main.storyboard */,
+				EDFA05491BB89AC0001D424B /* BackBtn.swift */,
 				ED12C4C41B8FD00A000A1452 /* SocialMediaOptionCell.swift */,
 				ED2850431B8E2307005C748A /* ResourceCell.swift */,
 				ED465D711B8E329B005F4993 /* Styler.swift */,
@@ -431,6 +446,7 @@
 				EDA272FA1B9CCC9F00CC59CB /* EventCell.swift */,
 				EDA362361B8BAB2500DA66AA /* LaunchScreen.xib */,
 				EDA362341B8BAB2500DA66AA /* Images.xcassets */,
+				EDFA054B1BB8A11F001D424B /* LoginAlert.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -487,6 +503,8 @@
 		EDA362291B8BAB2500DA66AA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EDFA05471BB8988C001D424B /* backButton.png */,
+				EDFA05511BB8FAC3001D424B /* icon */,
 				ED12C4A11B8FC5F0000A1452 /* Tab Bar Icons */,
 				EDA3624D1B8BAD3000DA66AA /* welcomeBackground.jpg */,
 				EDA362531B8BAE3100DA66AA /* welcomeBack.jpg */,
@@ -773,6 +791,7 @@
 			files = (
 				ED2850481B8E2848005C748A /* trident.png in Resources */,
 				EDA3624E1B8BAD3000DA66AA /* welcomeBackground.jpg in Resources */,
+				EDFA05481BB8988C001D424B /* backButton.png in Resources */,
 				ED12C4C21B8FCE3C000A1452 /* instagramIcon.png in Resources */,
 				ED12C4B11B8FC60E000A1452 /* home.png in Resources */,
 				EDA362331B8BAB2500DA66AA /* Main.storyboard in Resources */,
@@ -784,6 +803,7 @@
 				ED12C4B81B8FC60E000A1452 /* socialMedia@2x.png in Resources */,
 				ED12C4B21B8FC60E000A1452 /* home@2x.png in Resources */,
 				ED12C4AF1B8FC60E000A1452 /* grades@2x.png in Resources */,
+				EDFA05521BB8FAC3001D424B /* icon in Resources */,
 				EDA362521B8BADC800DA66AA /* cdmLogo.png in Resources */,
 				EDA362381B8BAB2500DA66AA /* LaunchScreen.xib in Resources */,
 				EDA362351B8BAB2500DA66AA /* Images.xcassets in Resources */,
@@ -809,6 +829,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFA054A1BB89AC0001D424B /* BackBtn.swift in Sources */,
 				ED12C4C91B8FDC04000A1452 /* SocialMediaView.swift in Sources */,
 				ED12C4BD1B8FC9B9000A1452 /* AnnouncementCell.swift in Sources */,
 				ED2850441B8E2308005C748A /* ResourceCell.swift in Sources */,
@@ -816,6 +837,7 @@
 				ED923B591B98F0280072A1AF /* Api.swift in Sources */,
 				EDA272F91B9CC82900CC59CB /* Event.swift in Sources */,
 				EDA362301B8BAB2500DA66AA /* GradesVC.swift in Sources */,
+				EDFA05501BB8EE6E001D424B /* ServiceResponse.swift in Sources */,
 				EDA3622C1B8BAB2500DA66AA /* AppDelegate.swift in Sources */,
 				ED465D721B8E329B005F4993 /* Styler.swift in Sources */,
 				ED23D7FB1B98F66900E86E80 /* User.swift in Sources */,
@@ -828,9 +850,11 @@
 				ED12C4C51B8FD00A000A1452 /* SocialMediaOptionCell.swift in Sources */,
 				ED23D7F91B98F54400E86E80 /* UserService.swift in Sources */,
 				ED1023281B9BA835000FD05E /* EventService.swift in Sources */,
+				EDFA054C1BB8A11F001D424B /* LoginAlert.swift in Sources */,
 				ED12C4BB1B8FC82D000A1452 /* Announcement.swift in Sources */,
 				ED12C4C71B8FD05F000A1452 /* SocialMediaOption.swift in Sources */,
 				ED465D761B8E3726005F4993 /* EventsVC.swift in Sources */,
+				EDFA054E1BB8EE48001D424B /* RxCallResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

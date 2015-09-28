@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import RxSwift
 
 class EventsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     // array of all announcements to display
@@ -31,6 +32,7 @@ class EventsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         self.view.addSubview(noneLabel)
         noneLabel.hidden = true
         
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -46,13 +48,23 @@ class EventsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     override func viewWillAppear(animated: Bool) {
         Styler.styleTopBar(self, title: "EVENTS", backHidden: true)
         
-        EventService.getEvents(
-            { (events) -> Void in
-                self.events = events
-                self.newsTable.reloadData()
-                self.showTable()
-            }, errorFunc: {(error, response) -> Void in
-        })
+        getEvents()
+    }
+    
+    func getEvents() {
+        
+        let eventsSubscriber = EventService.getEvents()
+        .subscribeNext { result in
+                print(result)
+                if let response = result.get() {
+                    self.events = response.get() as! [Event]
+                    self.newsTable.reloadData()
+                    
+                    if (self.events.count > 0 ) {
+                        self.showTable()
+                    }
+                }
+            }
     }
     
     func showTable() {

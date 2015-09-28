@@ -14,12 +14,12 @@ class UserService {
     
     static func signIn(username:String, password:String, successFunc:(User)-> Void, errorFunc:(NSError!, NSHTTPURLResponse?) -> Void, badParams:([String])->Void) {
         
-        let parameters = [
+        /*let parameters = [
             "username": username,
             "password": password
-        ]
+        ]*/
         
-        Alamofire.request(.POST, "\(Api.baseUrl)/validLogin/", parameters:parameters, encoding:.JSON)
+        /*Alamofire.request(.POST, "\(Api.baseUrl)/validLogin/", parameters:parameters, encoding:.JSON)
             .response { request, response, data, error in
                 print(response)
                 var json = JSON(data:data!)
@@ -39,7 +39,12 @@ class UserService {
                 } else {
                     errorFunc(error, response)
                 }
-            }
+            }*/
+        
+        var user = User.initUser(username, password: password)
+        // save the user obj to local db
+        user.saveToRealm()
+        successFunc(user)
     }
     
     

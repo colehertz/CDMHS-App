@@ -11,16 +11,12 @@ import UIKit
 
 class WelcomeVC: UIViewController, UIAlertViewDelegate {
     @IBOutlet var loginBtn: UIButton!
-    var alert = UIAlertView()
+    var alert = LoginAlert()
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        alert.title = "Login"
-        alert.addButtonWithTitle("Sign In")
-        alert.alertViewStyle = UIAlertViewStyle.LoginAndPasswordInput
-        alert.addButtonWithTitle("Cancel")
         alert.delegate = self
     
     }
@@ -32,7 +28,7 @@ class WelcomeVC: UIViewController, UIAlertViewDelegate {
         self.navigationController?.navigationBar.barTintColor = Styler.mainColor
         self.navigationController?.topViewController!.navigationController?.navigationBarHidden = true
         
-        var user = User.get()
+        let user = User.get()
         if user.id > -1 {
             // user is logged in so segue
             self.performSegueWithIdentifier("mainSegue", sender: self)
@@ -52,7 +48,7 @@ class WelcomeVC: UIViewController, UIAlertViewDelegate {
     func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
         if buttonIndex != alertView.cancelButtonIndex {
             
-            UserService.signIn("chersowitz",password:"c10395009009",
+            UserService.signIn(alertView.textFieldAtIndex(0)!.text!, password:alertView.textFieldAtIndex(1)!.text!,
                 successFunc: { (user) -> Void in
                     // save the user credentials if the login works for school loop
                     user.save()

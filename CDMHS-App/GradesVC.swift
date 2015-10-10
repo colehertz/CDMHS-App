@@ -86,16 +86,15 @@ class GradesVC: UIViewController, UIWebViewDelegate, UIAlertViewDelegate, NSURLC
         
         delegate.taskWillPerformHTTPRedirection = nil
         
-        /*Alamofire.request(.POST, "\(Api.baseUrl)/getCookie", parameters: params, encoding:ParameterEncoding.URL)
+        Alamofire.request(.POST, "\(Api.baseUrl)/getCookie", parameters: params, encoding:ParameterEncoding.URL)
             .responseString(completionHandler: { (result) -> Void in
-                var cookie = result
+                print(result)
+                let properties = ["set-cookie":result.description]
+                var cookie = NSHTTPCookie(properties: properties)
                 print(cookie)
-                
-                let properties = ["Set-Cookie":""]
-                var c = NSHTTPCookie(properties: properties)
             
-            })*/
-        Alamofire.request(.POST, "https://cdm.schoolloop.com/portal/login?etarget=login_form", parameters: params2, encoding:ParameterEncoding.URL)
+            })
+       /* Alamofire.request(.POST, "https://cdm.schoolloop.com/portal/login?etarget=login_form", parameters: params2, encoding:ParameterEncoding.URL)
             .responseString(completionHandler: { (result) -> Void in
 
                 
@@ -110,7 +109,7 @@ class GradesVC: UIViewController, UIWebViewDelegate, UIAlertViewDelegate, NSURLC
                 print(cookie)
                 
                 
-                }
+                }*/
 
         
     

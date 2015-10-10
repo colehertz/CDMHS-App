@@ -79,7 +79,7 @@ class EventService {
             let realm = try Realm()
             if let lastObj = realm.objects(Event).last {
                 return lastObj.id
-            }
+            } 
         } catch {
             
         }

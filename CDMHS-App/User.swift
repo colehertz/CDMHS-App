@@ -43,7 +43,7 @@ class User: Object {
         
         do {
             let realm = try Realm()
-            realm.write {
+            try realm.write {
                 realm.add(self, update: true)
             }
         } catch {

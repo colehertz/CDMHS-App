@@ -23,17 +23,17 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         resourcesTable.delegate = self
         resourcesTable.dataSource = self
         
-        var bellSchedule = Resource()
+        let bellSchedule = Resource()
         bellSchedule.title = "Bell Schedule"
-        bellSchedule.url = NSURL(string:"http://cdm.schoolloop.com/file/1385192323175/5949715866280787096.pdf")
+        bellSchedule.url = NSURL(fileURLWithPath:NSBundle.mainBundle().pathForResource("bellSchedule", ofType:"pdf")!) 
         resources.append(bellSchedule)
         
-        var handbook = Resource()
+        let handbook = Resource()
         handbook.title = "Handbook"
         handbook.url = NSURL(string:"http://ampelement.com/cdm/handbook/")
         resources.append(handbook)
         
-        var calendar = Resource()
+        let calendar = Resource()
         calendar.title = "NMUSD Calendar"
         calendar.url = NSURL(string: "http://cdm.schoolloop.com/file/1385192323175/1313571048212509123.pdf")
         resources.append(calendar)

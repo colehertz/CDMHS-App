@@ -15,12 +15,7 @@ class Event: Object {
     dynamic var title = ""
     dynamic var date = NSDate()
     dynamic var id = 0
-    
-    
-    required init() {
-       super.init()
 
-    }
     
     func deserializeJSON(json:JSON) {
         let formatter = NSDateFormatter()

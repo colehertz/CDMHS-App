@@ -24,6 +24,7 @@ class EventService {
                     let realm = try Realm()
                     let realmObjects = realm.objects(Event) // filter so date is greater than or = to current date
                     
+            
                     for obj in realmObjects {
                         cachedEvents.append(obj)
                     }
@@ -52,9 +53,9 @@ class EventService {
                                         let event = Event()
                                         event.deserializeJSON(e)
                                         events.append(event)
-                                        realm.write {
-                                            realm.add(event, update: true)
-                                        }
+                                            try realm.write {
+                                                realm.add(event, update: true)
+                                            }
                                         
                                     }
                                     //successFunc(events: events)

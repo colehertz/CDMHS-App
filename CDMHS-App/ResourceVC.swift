@@ -21,11 +21,10 @@ class ResourceVC: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         Styler.styleTopBar(self, title: resource.title, backHidden: false)
-        let backBtn = BackBtn(vc: self)
+        //let backBtn = BackBtn(vc: self)
+        
+        self.webView.loadRequest(NSURLRequest(URL: resource.url!))
         
     }
     
-    override func viewDidAppear(animated: Bool) {
-        self.webView.loadRequest(NSURLRequest(URL: resource.url!))
-    }
 }

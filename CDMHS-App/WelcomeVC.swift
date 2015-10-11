@@ -29,7 +29,7 @@ class WelcomeVC: UIViewController, UIAlertViewDelegate {
         self.navigationController?.topViewController!.navigationController?.navigationBarHidden = true
         
         let user = User.get()
-        if user.id > -1 {
+        if user.username != "" {
             // user is logged in so segue
             self.performSegueWithIdentifier("mainSegue", sender: self)
         }

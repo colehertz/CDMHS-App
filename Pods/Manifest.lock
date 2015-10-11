@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (3.0.0)
+  - Bolts/Tasks (1.3.0)
+  - Parse (1.9.0):
+    - Bolts/Tasks (>= 1.3.0)
+  - Realm (0.96.0-beta2):
+    - Realm/Headers (= 0.96.0-beta2)
+  - Realm/Headers (0.96.0-beta2)
+  - RealmSwift (0.96.0-beta2):
+    - Realm (= 0.96.0-beta2)
+  - RxCocoa (2.0.0-alpha.4):
+    - RxSwift (~> 2.0.0-alpha)
+  - RxSwift (2.0.0-alpha.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - Parse (~> 1.9)
+  - RealmSwift (= 0.96.0-beta2)
+  - RxCocoa (= 2.0.0-alpha.4)
+  - RxSwift (= 2.0.0-alpha.4)
+
+SPEC CHECKSUMS:
+  Alamofire: b61782387f81bcc538a0284cf2bb5d7995cd0a80
+  Bolts: 805a4a87413e49d4a0c2b7d469084cbc46b09342
+  Parse: 712efbc476d4f47b0f96b70db7e53101575753aa
+  Realm: a2154baf6fec1f12ded753f38081c775e9f06adf
+  RealmSwift: 00fc6388033f0dd4d27fb1ec2198614fcfc55ed2
+  RxCocoa: 5012df8ca246c9b4f0a76071c1fb275374eabae8
+  RxSwift: 76dbcb12e55197533f8ace2af887511d7c9262dc
+
+COCOAPODS: 0.38.2
